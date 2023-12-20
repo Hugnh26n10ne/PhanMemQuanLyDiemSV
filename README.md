@@ -1,1 +1,8 @@
-# Phan Mem Quan Ly Diem SV
+﻿## PhanMemQuanLyDiemSinhVien
+# Working with teams
+# Member:
++ Đàm Đình Hưng
++ Nguyễn Phùng Ngọc Lương
++ Nguyễn Vũ Kiên
++ Trần Thu Ngọc Phụng
++ Phạm Tiến Thành
