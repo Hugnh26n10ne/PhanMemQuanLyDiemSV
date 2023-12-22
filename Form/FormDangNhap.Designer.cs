@@ -220,6 +220,8 @@
             this.btn_DangNhap.Text = "Đăng Nhập";
             this.btn_DangNhap.UseVisualStyleBackColor = false;
             this.btn_DangNhap.Click += new System.EventHandler(this.btn_DangNhap_Click);
+            this.btn_DangNhap.Enter += new System.EventHandler(this.btn_DangNhap_Click);
+            this.btn_DangNhap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btn_DangNhap_KeyDown);
             // 
             // tbx_MatKhau
             // 
@@ -231,6 +233,7 @@
             this.tbx_MatKhau.TabIndex = 3;
             this.tbx_MatKhau.UseSystemPasswordChar = true;
             this.tbx_MatKhau.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_MatKhau_MouseClick);
+            this.tbx_MatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbx_MatKhau_KeyDown);
             // 
             // label1
             // 
@@ -251,6 +254,7 @@
             this.tbx_TaiKhoan.Size = new System.Drawing.Size(267, 30);
             this.tbx_TaiKhoan.TabIndex = 1;
             this.tbx_TaiKhoan.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_TaiKhoan_MouseClick);
+            this.tbx_TaiKhoan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbx_TaiKhoan_KeyDown);
             // 
             // lb_Tk
             // 

@@ -42,6 +42,9 @@ namespace PhanMemQuanLyDiemSinhVien
                 if (ketqua == 0)
                 {
                     MessageBox.Show($"Chào mừng User: {tbx_TaiKhoan.Text} đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    FormMain fm = new FormMain();
+                    fm.Show();
 
                 }
                 else if (ketqua == 1)
@@ -162,7 +165,13 @@ namespace PhanMemQuanLyDiemSinhVien
 
         }
 
-
+        private void btn_DangNhap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                btn_DangNhap.PerformClick();
+            }
+        }
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbx_TaiKhoan.Text))
@@ -227,6 +236,24 @@ namespace PhanMemQuanLyDiemSinhVien
             this.Hide();
             FormQuenMK fqmk = new FormQuenMK();
             fqmk.Show();
+        }
+
+        private void tbx_TaiKhoan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true; 
+                btn_DangNhap.PerformClick(); 
+            }
+        }
+
+        private void tbx_MatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                btn_DangNhap.PerformClick();
+            }
         }
     }
 }
