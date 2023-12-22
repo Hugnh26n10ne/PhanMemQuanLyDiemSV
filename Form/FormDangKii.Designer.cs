@@ -147,6 +147,7 @@
             this.tbx_NhapLMK.TabIndex = 10;
             this.tbx_NhapLMK.UseSystemPasswordChar = true;
             this.tbx_NhapLMK.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_NLMatKhau_MouseClick);
+            this.tbx_NhapLMK.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbx_NhapLMK_KeyDown);
             // 
             // label2
             // 
@@ -215,6 +216,7 @@
             this.tbx_TaiKhoan.Size = new System.Drawing.Size(274, 30);
             this.tbx_TaiKhoan.TabIndex = 1;
             this.tbx_TaiKhoan.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_TaiKhoan_MouseClick);
+            this.tbx_TaiKhoan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbx_TaiKhoan_KeyDown);
             // 
             // lb_Tk
             // 
@@ -248,6 +250,7 @@
             this.tbx_MatKhau.TabIndex = 3;
             this.tbx_MatKhau.UseSystemPasswordChar = true;
             this.tbx_MatKhau.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tbx_MatKhau_MouseClick);
+            this.tbx_MatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbx_MatKhau_KeyDown);
             // 
             // FormDangKi
             // 

@@ -150,5 +150,32 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             tbx_NhapLMK.SelectAll();
         }
+
+        private void tbx_TaiKhoan_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                btn_DangKi.PerformClick();
+            }
+        }
+
+        private void tbx_MatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                btn_DangKi.PerformClick();
+            }
+        }
+
+        private void tbx_NhapLMK_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                btn_DangKi.PerformClick();
+            }
+        }
     }
 }
