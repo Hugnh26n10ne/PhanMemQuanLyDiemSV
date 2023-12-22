@@ -266,6 +266,7 @@
             this.Name = "FormDangKi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý điểm sinh viên";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDangKi_FormClosing);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -177,5 +177,11 @@ namespace PhanMemQuanLyDiemSinhVien
                 btn_DangKi.PerformClick();
             }
         }
+
+        private void FormDangKi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormDangNhap fdn =new FormDangNhap();
+            fdn.Show();
+        }
     }
 }

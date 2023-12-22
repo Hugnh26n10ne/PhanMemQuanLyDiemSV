@@ -95,6 +95,7 @@
             // btn_SendPassNew
             // 
             this.btn_SendPassNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_SendPassNew.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SendPassNew.Font = new System.Drawing.Font("UTM Akashi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SendPassNew.ForeColor = System.Drawing.Color.White;
             this.btn_SendPassNew.Location = new System.Drawing.Point(120, 129);
@@ -137,6 +138,7 @@
             this.Name = "FormRePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý điểm sinh viên";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormRePassword_FormClosing);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

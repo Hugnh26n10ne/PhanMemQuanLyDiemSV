@@ -138,5 +138,11 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             tbx_OTP.SelectAll();
         }
+
+        private void FormQuenMK_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
     }
 }

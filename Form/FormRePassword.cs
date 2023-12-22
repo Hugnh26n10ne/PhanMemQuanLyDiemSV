@@ -63,5 +63,11 @@ namespace PhanMemQuanLyDiemSinhVien
         {
             tbx_MatKhauNew.SelectAll();
         }
+
+        private void FormRePassword_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormQuenMK fqmk = new FormQuenMK();
+            fqmk.Show();
+        }
     }
 }

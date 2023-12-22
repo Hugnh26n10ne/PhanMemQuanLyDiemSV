@@ -74,6 +74,7 @@
             // btn_SendOTP
             // 
             this.btn_SendOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_SendOTP.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SendOTP.Font = new System.Drawing.Font("UTM Akashi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SendOTP.ForeColor = System.Drawing.Color.White;
             this.btn_SendOTP.Location = new System.Drawing.Point(120, 116);
@@ -149,6 +150,7 @@
             // btn_SendEmail
             // 
             this.btn_SendEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_SendEmail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_SendEmail.Font = new System.Drawing.Font("UTM Akashi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SendEmail.ForeColor = System.Drawing.Color.White;
             this.btn_SendEmail.Location = new System.Drawing.Point(120, 214);
@@ -191,6 +193,7 @@
             this.Name = "FormQuenMK";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý điểm sinh viên";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQuenMK_FormClosing);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
