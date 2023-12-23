@@ -53,15 +53,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
-    <Compile Include="Form\FormMain.cs"></Compile>
+    <Compile Include="Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\Formdiem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Formdiem.Designer.cs">
       <DependentUpon>Formdiem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\Form1.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
