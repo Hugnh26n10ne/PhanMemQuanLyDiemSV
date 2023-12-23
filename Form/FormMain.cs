@@ -109,17 +109,20 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_ThongTin_Click(object sender, EventArgs e)
         {
-
+            FormThongTin ftt = new FormThongTin();
+            ftt.Show();
         }
 
         private void pbx_ThongTin_Click(object sender, EventArgs e)
         {
-
+            FormThongTin ftt = new FormThongTin();
+            ftt.Show();
         }
 
         private void lb_ThongTin_Click(object sender, EventArgs e)
         {
-
+            FormThongTin ftt = new FormThongTin();
+            ftt.Show();
         }
 
         private void pn_DiemTB_Click(object sender, EventArgs e)
@@ -184,17 +187,20 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_ThemTK_Click(object sender, EventArgs e)
         {
-
+            FormThemTaiKhoan fttk = new FormThemTaiKhoan();
+            fttk.Show();
         }
 
         private void pbx_ThemTK_Click(object sender, EventArgs e)
         {
-
+            FormThemTaiKhoan fttk = new FormThemTaiKhoan();
+            fttk.Show();
         }
 
         private void lb_ThemTK_Click(object sender, EventArgs e)
         {
-
+            FormThemTaiKhoan fttk = new FormThemTaiKhoan();
+            fttk.Show();
         }
     }
 }

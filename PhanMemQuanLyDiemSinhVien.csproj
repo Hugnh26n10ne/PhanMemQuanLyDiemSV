@@ -53,13 +53,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
-    <Compile Include="Form\FormMain.cs"></Compile>
+    <Compile Include="Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FormThemTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="Form\FormThemTaiKhoan.Designer.cs">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
     </Compile>
@@ -110,7 +112,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormDangKii.resx">
       <DependentUpon>FormDangKii.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormThemTaiKhoan.resx">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
