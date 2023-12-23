@@ -34,11 +34,11 @@
             this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btn_Them = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_Thoat = new System.Windows.Forms.Button();
+            this.btn_Luu = new System.Windows.Forms.Button();
+            this.btn_CapNhat = new System.Windows.Forms.Button();
+            this.btn_XuatFile = new System.Windows.Forms.Button();
+            this.btn_Xoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangThongTIn)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -94,70 +94,71 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.btn_Them);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btn_Thoat);
+            this.panel1.Controls.Add(this.btn_Luu);
+            this.panel1.Controls.Add(this.btn_CapNhat);
+            this.panel1.Controls.Add(this.btn_XuatFile);
+            this.panel1.Controls.Add(this.btn_Xoa);
             this.panel1.Location = new System.Drawing.Point(101, 833);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1241, 155);
             this.panel1.TabIndex = 3;
             // 
-            // button5
+            // btn_Thoat
             // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Red;
-            this.button5.Location = new System.Drawing.Point(910, 61);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 50);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Thoát";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Thoat.ForeColor = System.Drawing.Color.Red;
+            this.btn_Thoat.Location = new System.Drawing.Point(910, 61);
+            this.btn_Thoat.Name = "btn_Thoat";
+            this.btn_Thoat.Size = new System.Drawing.Size(128, 50);
+            this.btn_Thoat.TabIndex = 12;
+            this.btn_Thoat.Text = "Thoát";
+            this.btn_Thoat.UseVisualStyleBackColor = true;
             // 
-            // btn_Them
+            // btn_Luu
             // 
-            this.btn_Them.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Them.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_Them.Location = new System.Drawing.Point(79, 61);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(125, 50);
-            this.btn_Them.TabIndex = 8;
-            this.btn_Them.Text = "Lưu";
-            this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Luu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_Luu.Location = new System.Drawing.Point(79, 61);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(125, 50);
+            this.btn_Luu.TabIndex = 8;
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.UseVisualStyleBackColor = true;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
-            // button2
+            // btn_CapNhat
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(279, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 50);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Cập Nhật ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_CapNhat.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CapNhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_CapNhat.Location = new System.Drawing.Point(279, 61);
+            this.btn_CapNhat.Name = "btn_CapNhat";
+            this.btn_CapNhat.Size = new System.Drawing.Size(150, 50);
+            this.btn_CapNhat.TabIndex = 9;
+            this.btn_CapNhat.Text = "Cập Nhật ";
+            this.btn_CapNhat.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_XuatFile
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.Location = new System.Drawing.Point(700, 61);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(137, 50);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Xuất File";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_XuatFile.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XuatFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_XuatFile.Location = new System.Drawing.Point(700, 61);
+            this.btn_XuatFile.Name = "btn_XuatFile";
+            this.btn_XuatFile.Size = new System.Drawing.Size(137, 50);
+            this.btn_XuatFile.TabIndex = 11;
+            this.btn_XuatFile.Text = "Xuất File";
+            this.btn_XuatFile.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_Xoa
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(500, 61);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 50);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Xoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_Xoa.Location = new System.Drawing.Point(500, 61);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(129, 50);
+            this.btn_Xoa.TabIndex = 10;
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.UseVisualStyleBackColor = true;
             // 
             // FormThemTaiKhoan
             // 
@@ -182,10 +183,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ChucVu;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btn_Them;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Thoat;
+        private System.Windows.Forms.Button btn_Luu;
+        private System.Windows.Forms.Button btn_CapNhat;
+        private System.Windows.Forms.Button btn_XuatFile;
+        private System.Windows.Forms.Button btn_Xoa;
     }
 }
