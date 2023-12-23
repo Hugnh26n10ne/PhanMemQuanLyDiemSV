@@ -2,5 +2,6 @@
 /[Oo]bj/
 .vs/
 /.vs/
+/[Cc]onnected Services/
 
 *.sqlite
