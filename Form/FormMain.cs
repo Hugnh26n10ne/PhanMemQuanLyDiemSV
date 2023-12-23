@@ -33,62 +33,7 @@ namespace PhanMemQuanLyDiemSinhVien
             
         }
 
-        private void pn_GhiChu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_ThongTinCaNhan_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_CaiDat_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
-        private void pn_Diem_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_NhapDiem_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_MonHoc_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_NhapMonHoc_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_ThongTin_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_NhapThongTin_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_DiemTB_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pn_ThemTK_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void pn_Thoat_Click(object sender, EventArgs e)
         {
@@ -130,6 +75,126 @@ namespace PhanMemQuanLyDiemSinhVien
             this.Hide();
             FormDangNhap fdn = new FormDangNhap();
             fdn.Show();
+        }
+
+        private void pn_Diem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_Diem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_Diem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_MonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_MonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_MonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_ThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_ThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_ThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_DiemTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_DTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_DTB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_NhapDiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_NhapDiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_NhapDiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_NhapMonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_NhapMonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_NhapMonHoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_NhapThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_NhapThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_NhapThongTin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pn_ThemTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbx_ThemTK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_ThemTK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
