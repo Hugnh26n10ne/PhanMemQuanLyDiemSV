@@ -50,11 +50,17 @@ namespace PhanMemQuanLyDiemSinhVien
                 else if (ketqua == 1)
                 {
                     MessageBox.Show($"Chào mừng Giáo viên: {tbx_TaiKhoan.Text} đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    FormMain fm = new FormMain();
+                    fm.Show();
 
                 }
                 else if (ketqua == 2)
                 {
                     MessageBox.Show("Chào mừng Admin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    FormMain fm = new FormMain();
+                    fm.Show();
 
                 }
                 else if (ketqua == 3)
@@ -187,6 +193,8 @@ namespace PhanMemQuanLyDiemSinhVien
             AuthoLogin();
 
             SaveSettings(GetLevel(tbx_TaiKhoan.Text));
+
+
 
         }
 

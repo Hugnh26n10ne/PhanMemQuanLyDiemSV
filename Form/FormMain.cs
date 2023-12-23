@@ -48,10 +48,7 @@ namespace PhanMemQuanLyDiemSinhVien
 
         }
 
-        private void pn_Thoat_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
         private void pn_Diem_Paint(object sender, PaintEventArgs e)
         {
@@ -91,6 +88,48 @@ namespace PhanMemQuanLyDiemSinhVien
         private void pn_ThemTK_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pn_Thoat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
+
+        private void pbx_Exit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
+
+        private void lb_Thoat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
+
+        private void pn_ThongTinCaNhan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
+
+        private void lb_Profile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
+        }
+
+        private void pbx_Profile_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangNhap fdn = new FormDangNhap();
+            fdn.Show();
         }
     }
 }

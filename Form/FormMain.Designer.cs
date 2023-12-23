@@ -33,17 +33,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.pbx_Menu = new System.Windows.Forms.PictureBox();
-            this.pn_GhiChu = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pbx_Manage = new System.Windows.Forms.PictureBox();
             this.pn_ThongTinCaNhan = new System.Windows.Forms.Panel();
             this.pbx_Profile = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pn_CaiDat = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pbx_Setting = new System.Windows.Forms.PictureBox();
+            this.lb_Profile = new System.Windows.Forms.Label();
             this.pn_Thoat = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lb_Thoat = new System.Windows.Forms.Label();
             this.pbx_Exit = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,12 +69,8 @@
             this.pn_Bar.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Menu)).BeginInit();
-            this.pn_GhiChu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Manage)).BeginInit();
             this.pn_ThongTinCaNhan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Profile)).BeginInit();
-            this.pn_CaiDat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Setting)).BeginInit();
             this.pn_Thoat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Exit)).BeginInit();
             this.panel2.SuspendLayout();
@@ -107,9 +97,7 @@
             // 
             this.pn_Bar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.pn_Bar.Controls.Add(this.panel3);
-            this.pn_Bar.Controls.Add(this.pn_GhiChu);
             this.pn_Bar.Controls.Add(this.pn_ThongTinCaNhan);
-            this.pn_Bar.Controls.Add(this.pn_CaiDat);
             this.pn_Bar.Controls.Add(this.pn_Thoat);
             this.pn_Bar.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_Bar.Location = new System.Drawing.Point(0, 0);
@@ -154,53 +142,21 @@
             this.pbx_Menu.TabStop = false;
             this.pbx_Menu.Click += new System.EventHandler(this.pbx_Menu_Click);
             // 
-            // pn_GhiChu
-            // 
-            this.pn_GhiChu.Controls.Add(this.label10);
-            this.pn_GhiChu.Controls.Add(this.pbx_Manage);
-            this.pn_GhiChu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_GhiChu.Location = new System.Drawing.Point(3, 71);
-            this.pn_GhiChu.Name = "pn_GhiChu";
-            this.pn_GhiChu.Size = new System.Drawing.Size(230, 50);
-            this.pn_GhiChu.TabIndex = 10;
-            this.pn_GhiChu.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_GhiChu_Paint);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(67, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 23);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Ghi chú";
-            // 
-            // pbx_Manage
-            // 
-            this.pbx_Manage.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pbx_Manage.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.notepad;
-            this.pbx_Manage.Location = new System.Drawing.Point(9, 0);
-            this.pbx_Manage.Name = "pbx_Manage";
-            this.pbx_Manage.Size = new System.Drawing.Size(50, 50);
-            this.pbx_Manage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_Manage.TabIndex = 11;
-            this.pbx_Manage.TabStop = false;
-            // 
             // pn_ThongTinCaNhan
             // 
             this.pn_ThongTinCaNhan.Controls.Add(this.pbx_Profile);
-            this.pn_ThongTinCaNhan.Controls.Add(this.label11);
+            this.pn_ThongTinCaNhan.Controls.Add(this.lb_Profile);
             this.pn_ThongTinCaNhan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_ThongTinCaNhan.Location = new System.Drawing.Point(0, 136);
+            this.pn_ThongTinCaNhan.Location = new System.Drawing.Point(0, 70);
             this.pn_ThongTinCaNhan.Name = "pn_ThongTinCaNhan";
             this.pn_ThongTinCaNhan.Size = new System.Drawing.Size(233, 50);
             this.pn_ThongTinCaNhan.TabIndex = 11;
+            this.pn_ThongTinCaNhan.Click += new System.EventHandler(this.pn_ThongTinCaNhan_Click);
             this.pn_ThongTinCaNhan.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_ThongTinCaNhan_Paint);
             // 
             // pbx_Profile
             // 
-            this.pbx_Profile.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pbx_Profile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbx_Profile.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.profile;
             this.pbx_Profile.Location = new System.Drawing.Point(10, 0);
             this.pbx_Profile.Name = "pbx_Profile";
@@ -208,78 +164,47 @@
             this.pbx_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_Profile.TabIndex = 3;
             this.pbx_Profile.TabStop = false;
+            this.pbx_Profile.Click += new System.EventHandler(this.pbx_Profile_Click);
             // 
-            // label11
+            // lb_Profile
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(68, 14);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(154, 23);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Thông tin cá nhân";
-            // 
-            // pn_CaiDat
-            // 
-            this.pn_CaiDat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pn_CaiDat.Controls.Add(this.label12);
-            this.pn_CaiDat.Controls.Add(this.pbx_Setting);
-            this.pn_CaiDat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_CaiDat.Location = new System.Drawing.Point(0, 489);
-            this.pn_CaiDat.Name = "pn_CaiDat";
-            this.pn_CaiDat.Size = new System.Drawing.Size(233, 50);
-            this.pn_CaiDat.TabIndex = 12;
-            this.pn_CaiDat.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_CaiDat_Paint);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(68, 14);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(67, 23);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Cài đặt";
-            // 
-            // pbx_Setting
-            // 
-            this.pbx_Setting.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pbx_Setting.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.setting;
-            this.pbx_Setting.Location = new System.Drawing.Point(12, 0);
-            this.pbx_Setting.Name = "pbx_Setting";
-            this.pbx_Setting.Size = new System.Drawing.Size(50, 50);
-            this.pbx_Setting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_Setting.TabIndex = 4;
-            this.pbx_Setting.TabStop = false;
+            this.lb_Profile.AutoSize = true;
+            this.lb_Profile.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Profile.ForeColor = System.Drawing.Color.White;
+            this.lb_Profile.Location = new System.Drawing.Point(68, 14);
+            this.lb_Profile.Name = "lb_Profile";
+            this.lb_Profile.Size = new System.Drawing.Size(154, 23);
+            this.lb_Profile.TabIndex = 7;
+            this.lb_Profile.Text = "Thông tin cá nhân";
+            this.lb_Profile.Click += new System.EventHandler(this.lb_Profile_Click);
             // 
             // pn_Thoat
             // 
             this.pn_Thoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.pn_Thoat.Controls.Add(this.label13);
+            this.pn_Thoat.Controls.Add(this.lb_Thoat);
             this.pn_Thoat.Controls.Add(this.pbx_Exit);
             this.pn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pn_Thoat.Location = new System.Drawing.Point(0, 552);
             this.pn_Thoat.Name = "pn_Thoat";
             this.pn_Thoat.Size = new System.Drawing.Size(233, 50);
             this.pn_Thoat.TabIndex = 13;
-            this.pn_Thoat.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_Thoat_Paint);
+            this.pn_Thoat.Click += new System.EventHandler(this.pn_Thoat_Click);
             // 
-            // label13
+            // lb_Thoat
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(70, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 23);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Thoát";
+            this.lb_Thoat.AutoSize = true;
+            this.lb_Thoat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Thoat.ForeColor = System.Drawing.Color.White;
+            this.lb_Thoat.Location = new System.Drawing.Point(70, 16);
+            this.lb_Thoat.Name = "lb_Thoat";
+            this.lb_Thoat.Size = new System.Drawing.Size(56, 23);
+            this.lb_Thoat.TabIndex = 9;
+            this.lb_Thoat.Text = "Thoát";
+            this.lb_Thoat.Click += new System.EventHandler(this.lb_Thoat_Click);
             // 
             // pbx_Exit
             // 
-            this.pbx_Exit.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pbx_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbx_Exit.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.exit;
             this.pbx_Exit.Location = new System.Drawing.Point(12, 0);
             this.pbx_Exit.Name = "pbx_Exit";
@@ -287,6 +212,7 @@
             this.pbx_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_Exit.TabIndex = 5;
             this.pbx_Exit.TabStop = false;
+            this.pbx_Exit.Click += new System.EventHandler(this.pbx_Exit_Click);
             // 
             // panel2
             // 
@@ -599,19 +525,14 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MinimumSize = new System.Drawing.Size(974, 663);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần mềm quản lý điểm sinh viên";
             this.pn_Bar.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Menu)).EndInit();
-            this.pn_GhiChu.ResumeLayout(false);
-            this.pn_GhiChu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Manage)).EndInit();
             this.pn_ThongTinCaNhan.ResumeLayout(false);
             this.pn_ThongTinCaNhan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Profile)).EndInit();
-            this.pn_CaiDat.ResumeLayout(false);
-            this.pn_CaiDat.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_Setting)).EndInit();
             this.pn_Thoat.ResumeLayout(false);
             this.pn_Thoat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_Exit)).EndInit();
@@ -653,7 +574,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbx_Exit;
-        private System.Windows.Forms.PictureBox pbx_Setting;
         private System.Windows.Forms.PictureBox pbx_Profile;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pn_DiemTB;
@@ -681,14 +601,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel pn_GhiChu;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pbx_Manage;
         private System.Windows.Forms.Panel pn_ThongTinCaNhan;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel pn_CaiDat;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lb_Profile;
         private System.Windows.Forms.Panel pn_Thoat;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lb_Thoat;
     }
 }
