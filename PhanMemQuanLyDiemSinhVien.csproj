@@ -53,17 +53,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
-    <Compile Include="Form\Form1.cs">
+    <Compile Include="Form\FormThemTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form\FormThemTaiKhoan.Designer.cs">
+      <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormThongTin.Designer.cs">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="Function\cls_Function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormThemTaiKhoan.resx">
+      <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormThongTin.resx">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
