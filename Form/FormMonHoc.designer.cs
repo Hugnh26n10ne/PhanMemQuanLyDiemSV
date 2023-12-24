@@ -251,6 +251,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgrv);
             this.Name = "FormMonHoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phần Mềm Quản Lí Điểm Sinh VIên";
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv)).EndInit();
             this.ResumeLayout(false);
