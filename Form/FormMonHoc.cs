@@ -45,5 +45,25 @@ namespace PhanMemQuanLyDiemSinhVien
             dtgrv.Rows.Add(row1);
             dtgrv.Rows.Add(row2);
         }
+
+        private void btn_TimKiem_Click(object sender, EventArgs e)
+        {
+            string keyword = tbx_TimKiem.Text;
+            PerformSearch(keyword);
+        }
+
+       
+
+        private void PerformSearch(string keyword1)
+        {
+            if(!string.IsNullOrEmpty(keyword1))
+            {
+                MessageBox.Show($"Đang tìm kiếm: {keyword1}");
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!");
+            }
+        }
     }
 }
