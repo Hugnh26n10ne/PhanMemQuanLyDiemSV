@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhapThongTin));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_TimKiem = new System.Windows.Forms.Button();
             this.tbx_TimKiem = new System.Windows.Forms.TextBox();
@@ -39,6 +40,19 @@
             this.btn_Luu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_HoVaTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_DanToc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_Nganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,19 +78,6 @@
             this.tbx_Khoa = new System.Windows.Forms.TextBox();
             this.tbx_Nganh = new System.Windows.Forms.TextBox();
             this.cbx_TrangThai = new System.Windows.Forms.ComboBox();
-            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_MaSinhVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_HoVaTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_DanToc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_Nganh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_Lop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,7 +102,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1163, 189);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin sinh viên";
+            this.groupBox1.Text = "Thông tin ";
             // 
             // btn_TimKiem
             // 
@@ -193,9 +194,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(26, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 23);
+            this.label1.Size = new System.Drawing.Size(306, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cập nhật thông tin sinh viên: Thêm, Sửa, Xóa,...";
+            this.label1.Text = "Cập nhật thông tin : Thêm, Sửa, Xóa,...";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView
@@ -223,6 +224,106 @@
             this.dataGridView.RowTemplate.Height = 24;
             this.dataGridView.Size = new System.Drawing.Size(1163, 151);
             this.dataGridView.TabIndex = 6;
+            // 
+            // dtgrv_Stt
+            // 
+            this.dtgrv_Stt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_Stt.FillWeight = 50F;
+            this.dtgrv_Stt.HeaderText = "STT";
+            this.dtgrv_Stt.MinimumWidth = 6;
+            this.dtgrv_Stt.Name = "dtgrv_Stt";
+            // 
+            // dtgrv_MaSinhVien
+            // 
+            this.dtgrv_MaSinhVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_MaSinhVien.FillWeight = 150F;
+            this.dtgrv_MaSinhVien.HeaderText = "Mã Sinh Viên";
+            this.dtgrv_MaSinhVien.MinimumWidth = 6;
+            this.dtgrv_MaSinhVien.Name = "dtgrv_MaSinhVien";
+            // 
+            // dtgrv_HoVaTen
+            // 
+            this.dtgrv_HoVaTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_HoVaTen.FillWeight = 150F;
+            this.dtgrv_HoVaTen.HeaderText = "Họ và Tên";
+            this.dtgrv_HoVaTen.MinimumWidth = 6;
+            this.dtgrv_HoVaTen.Name = "dtgrv_HoVaTen";
+            // 
+            // dtgrv_NgaySinh
+            // 
+            this.dtgrv_NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_NgaySinh.FillWeight = 80F;
+            this.dtgrv_NgaySinh.HeaderText = "Ngày Sinh";
+            this.dtgrv_NgaySinh.MinimumWidth = 6;
+            this.dtgrv_NgaySinh.Name = "dtgrv_NgaySinh";
+            // 
+            // dtgrv_GioiTinh
+            // 
+            this.dtgrv_GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_GioiTinh.FillWeight = 60F;
+            this.dtgrv_GioiTinh.HeaderText = "Giới Tính";
+            this.dtgrv_GioiTinh.MinimumWidth = 6;
+            this.dtgrv_GioiTinh.Name = "dtgrv_GioiTinh";
+            // 
+            // dtgrv_QueQuan
+            // 
+            this.dtgrv_QueQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_QueQuan.HeaderText = "Quê Quán";
+            this.dtgrv_QueQuan.MinimumWidth = 6;
+            this.dtgrv_QueQuan.Name = "dtgrv_QueQuan";
+            // 
+            // dtgrv_DanToc
+            // 
+            this.dtgrv_DanToc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_DanToc.HeaderText = "Dân Tộc";
+            this.dtgrv_DanToc.MinimumWidth = 6;
+            this.dtgrv_DanToc.Name = "dtgrv_DanToc";
+            // 
+            // dtgrv_SoDienThoai
+            // 
+            this.dtgrv_SoDienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_SoDienThoai.FillWeight = 120F;
+            this.dtgrv_SoDienThoai.HeaderText = "Số Điện Thoại";
+            this.dtgrv_SoDienThoai.MinimumWidth = 6;
+            this.dtgrv_SoDienThoai.Name = "dtgrv_SoDienThoai";
+            // 
+            // dtgrv_Email
+            // 
+            this.dtgrv_Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_Email.FillWeight = 120F;
+            this.dtgrv_Email.HeaderText = "Email";
+            this.dtgrv_Email.MinimumWidth = 6;
+            this.dtgrv_Email.Name = "dtgrv_Email";
+            // 
+            // dtgrv_Khoa
+            // 
+            this.dtgrv_Khoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_Khoa.HeaderText = "Khóa";
+            this.dtgrv_Khoa.MinimumWidth = 6;
+            this.dtgrv_Khoa.Name = "dtgrv_Khoa";
+            // 
+            // dtgrv_Nganh
+            // 
+            this.dtgrv_Nganh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_Nganh.HeaderText = "Ngành";
+            this.dtgrv_Nganh.MinimumWidth = 6;
+            this.dtgrv_Nganh.Name = "dtgrv_Nganh";
+            // 
+            // dtgrv_Lop
+            // 
+            this.dtgrv_Lop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_Lop.FillWeight = 80F;
+            this.dtgrv_Lop.HeaderText = "Lớp";
+            this.dtgrv_Lop.MinimumWidth = 6;
+            this.dtgrv_Lop.Name = "dtgrv_Lop";
+            // 
+            // dtgrv_TrangThai
+            // 
+            this.dtgrv_TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TrangThai.FillWeight = 80F;
+            this.dtgrv_TrangThai.HeaderText = "Trạng Thái";
+            this.dtgrv_TrangThai.MinimumWidth = 6;
+            this.dtgrv_TrangThai.Name = "dtgrv_TrangThai";
             // 
             // pictureBox1
             // 
@@ -486,106 +587,6 @@
             this.cbx_TrangThai.TabIndex = 33;
             this.cbx_TrangThai.Text = "- Trạng Thái -";
             // 
-            // dtgrv_Stt
-            // 
-            this.dtgrv_Stt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Stt.FillWeight = 50F;
-            this.dtgrv_Stt.HeaderText = "STT";
-            this.dtgrv_Stt.MinimumWidth = 6;
-            this.dtgrv_Stt.Name = "dtgrv_Stt";
-            // 
-            // dtgrv_MaSinhVien
-            // 
-            this.dtgrv_MaSinhVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_MaSinhVien.FillWeight = 150F;
-            this.dtgrv_MaSinhVien.HeaderText = "Mã Sinh Viên";
-            this.dtgrv_MaSinhVien.MinimumWidth = 6;
-            this.dtgrv_MaSinhVien.Name = "dtgrv_MaSinhVien";
-            // 
-            // dtgrv_HoVaTen
-            // 
-            this.dtgrv_HoVaTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_HoVaTen.FillWeight = 150F;
-            this.dtgrv_HoVaTen.HeaderText = "Họ và Tên";
-            this.dtgrv_HoVaTen.MinimumWidth = 6;
-            this.dtgrv_HoVaTen.Name = "dtgrv_HoVaTen";
-            // 
-            // dtgrv_NgaySinh
-            // 
-            this.dtgrv_NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_NgaySinh.FillWeight = 80F;
-            this.dtgrv_NgaySinh.HeaderText = "Ngày Sinh";
-            this.dtgrv_NgaySinh.MinimumWidth = 6;
-            this.dtgrv_NgaySinh.Name = "dtgrv_NgaySinh";
-            // 
-            // dtgrv_GioiTinh
-            // 
-            this.dtgrv_GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_GioiTinh.FillWeight = 60F;
-            this.dtgrv_GioiTinh.HeaderText = "Giới Tính";
-            this.dtgrv_GioiTinh.MinimumWidth = 6;
-            this.dtgrv_GioiTinh.Name = "dtgrv_GioiTinh";
-            // 
-            // dtgrv_QueQuan
-            // 
-            this.dtgrv_QueQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_QueQuan.HeaderText = "Quê Quán";
-            this.dtgrv_QueQuan.MinimumWidth = 6;
-            this.dtgrv_QueQuan.Name = "dtgrv_QueQuan";
-            // 
-            // dtgrv_DanToc
-            // 
-            this.dtgrv_DanToc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_DanToc.HeaderText = "Dân Tộc";
-            this.dtgrv_DanToc.MinimumWidth = 6;
-            this.dtgrv_DanToc.Name = "dtgrv_DanToc";
-            // 
-            // dtgrv_SoDienThoai
-            // 
-            this.dtgrv_SoDienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_SoDienThoai.FillWeight = 120F;
-            this.dtgrv_SoDienThoai.HeaderText = "Số Điện Thoại";
-            this.dtgrv_SoDienThoai.MinimumWidth = 6;
-            this.dtgrv_SoDienThoai.Name = "dtgrv_SoDienThoai";
-            // 
-            // dtgrv_Email
-            // 
-            this.dtgrv_Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Email.FillWeight = 120F;
-            this.dtgrv_Email.HeaderText = "Email";
-            this.dtgrv_Email.MinimumWidth = 6;
-            this.dtgrv_Email.Name = "dtgrv_Email";
-            // 
-            // dtgrv_Khoa
-            // 
-            this.dtgrv_Khoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Khoa.HeaderText = "Khóa";
-            this.dtgrv_Khoa.MinimumWidth = 6;
-            this.dtgrv_Khoa.Name = "dtgrv_Khoa";
-            // 
-            // dtgrv_Nganh
-            // 
-            this.dtgrv_Nganh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Nganh.HeaderText = "Ngành";
-            this.dtgrv_Nganh.MinimumWidth = 6;
-            this.dtgrv_Nganh.Name = "dtgrv_Nganh";
-            // 
-            // dtgrv_Lop
-            // 
-            this.dtgrv_Lop.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Lop.FillWeight = 80F;
-            this.dtgrv_Lop.HeaderText = "Lớp";
-            this.dtgrv_Lop.MinimumWidth = 6;
-            this.dtgrv_Lop.Name = "dtgrv_Lop";
-            // 
-            // dtgrv_TrangThai
-            // 
-            this.dtgrv_TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TrangThai.FillWeight = 80F;
-            this.dtgrv_TrangThai.HeaderText = "Trạng Thái";
-            this.dtgrv_TrangThai.MinimumWidth = 6;
-            this.dtgrv_TrangThai.Name = "dtgrv_TrangThai";
-            // 
             // FormNhapThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -618,6 +619,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNhapThongTin";
             this.Text = "FormNhapThongTin";
             this.groupBox1.ResumeLayout(false);
