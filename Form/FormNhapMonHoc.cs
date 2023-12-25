@@ -8,25 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Microsoft.Office.Interop.Excel;
 
 namespace PhanMemQuanLyDiemSinhVien
 {
     public partial class FormNhapMonHoc : Form
     {
-        SqlConnection connection;
-        SqlCommand command;
-        string str = "Data Source=Belphegor0813;Initial Catalog=DatabaseQLDiemSV;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
-        SqlDataAdapter adapter = new SqlDataAdapter();
-        DataTable table = new DataTable();
+        string connectionString;
+        SqlConnection conn = new SqlConnection();
+        DataSet ds;
+        SqlDataAdapter da;
 
-        void loaddata()
+        private void LoadData()
         {
-            command = connection.CreateCommand();
-            command.CommandText = "select * from MonHoc";
-            adapter.SelectCommand = command;
-            table.Clear();
-            adapter.Fill(table);
-            dtgrv.DataSource = table;
+            connectionString = "Data Source=Belphegor0813;Initial Catalog=DatabaseQLDiemSV;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+            ds = new DataSet();
+            string query = "Select * from MonHoc";
+            try
+            {
+                SqlConnection conn = new SqlConnection(connectionString);
+                da = new SqlDataAdapter(query, conn);
+                da.Fill(ds, "MonHoc");
+                dtgrv.DataSource = ds.Tables["MonHoc"];
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         public FormNhapMonHoc()
         {
@@ -35,39 +43,74 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void FormNhapMonHoc_Load(object sender, EventArgs e)
         {
-            connection = new SqlConnection(str);
-            connection.Open();
-            loaddata();
+            LoadData();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int i;
-            i = dtgrv.CurrentRow.Index;
-            tbx_MaMonHoc.Text = dtgrv.Rows[i].Cells[0].ToString();
-            tbx_MaGiaoVien.Text = dtgrv.Rows[i].Cells[1].ToString();
-            tbx_DiemID.Text = dtgrv.Rows[i].Cells[2].ToString();
-            tbx_TenMonHoc.Text = dtgrv.Rows[i].Cells[3].ToString();
-            tbx_ThoiGian.Text = dtgrv.Rows[i].Cells[4].ToString();
-            tbx_DiaDiem.Text = dtgrv.Rows[i].Cells[5].ToString();
-            tbx_HocPhi.Text = dtgrv.Rows[i].Cells[9].ToString();
-            tbx_GhiChu.Text = dtgrv.Rows[i].Cells[10].ToString();
-            tbx_SoTinChi.Text = dtgrv.Rows[i].Cells[6].ToString();
-            tbx_SoTiet.Text = dtgrv.Rows[i].Cells[7].ToString();
-            tbx_SoDangKi.Text = dtgrv.Rows[i].Cells[8].ToString();
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            command = connection.CreateCommand();
-            command.CommandText = "insert into MonHoc values('"+tbx_MaMonHoc.Text+"', N'"+tbx_MaGiaoVien.Text+ "', N'"+tbx_DiemID.Text+ "', N'"+tbx_TenMonHoc.Text+ "', N'"+tbx_ThoiGian.Text+ "', N'"+tbx_DiaDiem.Text+ "', N'"+tbx_SoTinChi.Text+ "',N'"+tbx_SoTiet.Text+ "', N'"+tbx_SoDangKi.Text+ "', N'"+tbx_HocPhi.Text+ "',N'"+tbx_GhiChu.Text+"')";
-            command.ExecuteNonQuery();
-            loaddata();
+            try
+            {
+                SqlConnection conn = new SqlConnection(connectionString);
+                conn.Open();
+                int CurrentIndex = dtgrv.CurrentCell.RowIndex;
+                string ma_mh = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[0].Value.ToString());
+                string ma_gv = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[1].Value.ToString());
+                string diem_id = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[2].Value.ToString());
+                string ten_mh = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[3].Value.ToString());
+                string thoi_gian = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[4].Value.ToString());
+                string dia_diem = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[5].Value.ToString());
+                int so_tin_chi = Convert.ToInt32(dtgrv.Rows[CurrentIndex].Cells[6].Value.ToString());
+                int so_tiet = Convert.ToInt32(dtgrv.Rows[CurrentIndex].Cells[7].Value.ToString());
+                int so_dk = Convert.ToInt32(dtgrv.Rows[CurrentIndex].Cells[8].Value.ToString());
+                string hoc_phi = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[9].Value.ToString());
+                string ghi_chu = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[10].Value.ToString());
+                string insertStr = "Insert into MonHoc Values('" + ma_mh + "','" + ma_gv + "','" + diem_id + "','" + ten_mh + "','" + thoi_gian + "','" + dia_diem + "','" + so_tin_chi + "','" + so_tiet + "','" + so_dk + "','" + hoc_phi + "','" + ghi_chu + "')";
+                SqlCommand insertCmd = new SqlCommand(insertStr, conn);
+                insertCmd.CommandType = CommandType.Text;
+                insertCmd.ExecuteNonQuery();
+                LoadData();
+                MessageBox.Show("Bạn đã lưu thành công rùi!!", "THÔNG BÁO", MessageBoxButtons.OK);
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(connectionString);
+                conn.Open();
+                int CurrentIndex = dtgrv.CurrentCell.RowIndex;
+                string ma_mh = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[0].Value.ToString());
+                string ma_gv = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[1].Value.ToString());
+                string diem_id = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[2].Value.ToString());
+                string ten_mh = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[3].Value.ToString());
+                string thoi_gian = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[4].Value.ToString());
+                string dia_diem = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[5].Value.ToString());
+                int so_tin_chi = Convert.ToInt32(dtgrv.Rows[CurrentIndex].Cells[6].Value.ToString());
+                int so_tiet = Convert.ToInt32(dtgrv.Rows[CurrentIndex].Cells[7].Value.ToString());
+                int so_dk = Convert.ToInt32(dtgrv.Rows[CurrentIndex].Cells[8].Value.ToString());
+                string hoc_phi = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[9].Value.ToString());
+                string ghi_chu = Convert.ToString(dtgrv.Rows[CurrentIndex].Cells[10].Value.ToString());
+                string DeleteStr = "Delete from MonHoc where ma_mh='" + ma_mh + "'";
+                SqlCommand Deletecmd = new SqlCommand(DeleteStr, conn);
+                Deletecmd.CommandType = CommandType.Text;
+                Deletecmd.ExecuteNonQuery();
+                LoadData();
+                MessageBox.Show("Bạn đã xóa thành công!!", "THÔNG BÁO", MessageBoxButtons.OK);
+                conn.Close();
+            }
+            catch(SqlException ex);
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
+    
+
+       
+   
