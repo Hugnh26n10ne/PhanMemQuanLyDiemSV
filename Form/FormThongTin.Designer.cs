@@ -344,7 +344,9 @@
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(1710, 1051);
             this.Controls.Add(this.groupBox1);
+            this.MinimumSize = new System.Drawing.Size(1736, 1122);
             this.Name = "FormThongTin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormThongTin";
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
