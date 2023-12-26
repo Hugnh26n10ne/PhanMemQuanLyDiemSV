@@ -206,7 +206,9 @@
   <ItemGroup>
     <None Include="Resources\add-friend.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shape1.png" />
     <None Include="Resources\search.png" />

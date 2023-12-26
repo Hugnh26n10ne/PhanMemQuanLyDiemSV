@@ -86,7 +86,7 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            Exe("INSERT INTO Infomation(tai_khoan, ho_va_ten, gioi_tinh ,dia_chi, ngay_sinh, dan_toc ,so_dien_thoai ,email ,nganh ,vai_tro ,trang_thai) VALUES(N'" + tbx_TaiKhoan.Text + "', N'" + tbx_HoTen.Text + "', N'" + cbx_GioiTinh.Text + "', N'" + tbx_DiaChi.Text + "', N'" + dtp_NgaySinh.Text + "', N'" + tbx_DanToc.Text + "', N'" + tbx_SDT.Text + "', N'" + tbx_email.Text + "', N'" + tbx_nganh.Text + "', N'" + tbx_vaitro.Text + "', N'" + cbx_TrangThai.Text + "') ");
+           
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

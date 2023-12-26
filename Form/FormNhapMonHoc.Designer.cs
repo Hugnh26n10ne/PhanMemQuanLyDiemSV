@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhapMonHoc));
             this.dtgrv = new System.Windows.Forms.DataGridView();
             this.ma_mh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ma_gv = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,7 +81,7 @@
             // ma_mh
             // 
             this.ma_mh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ma_mh.FillWeight = 70F;
+            this.ma_mh.DataPropertyName = "ma_mh";
             this.ma_mh.HeaderText = "Mã Môn Học";
             this.ma_mh.MinimumWidth = 6;
             this.ma_mh.Name = "ma_mh";
@@ -88,7 +89,7 @@
             // ma_gv
             // 
             this.ma_gv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ma_gv.FillWeight = 70F;
+            this.ma_gv.DataPropertyName = "ma_gv";
             this.ma_gv.HeaderText = "Mã Giáo Viên";
             this.ma_gv.MinimumWidth = 6;
             this.ma_gv.Name = "ma_gv";
@@ -96,14 +97,15 @@
             // diem_id
             // 
             this.diem_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.diem_id.FillWeight = 30F;
+            this.diem_id.DataPropertyName = "diem_id";
             this.diem_id.HeaderText = "Điểm ID";
-            this.diem_id.MinimumWidth = 6;
+            this.diem_id.MinimumWidth = 10;
             this.diem_id.Name = "diem_id";
             // 
             // ten_mh
             // 
             this.ten_mh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ten_mh.DataPropertyName = "ten_mh";
             this.ten_mh.HeaderText = "Tên Môn Học";
             this.ten_mh.MinimumWidth = 6;
             this.ten_mh.Name = "ten_mh";
@@ -111,7 +113,7 @@
             // thoi_gian
             // 
             this.thoi_gian.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.thoi_gian.FillWeight = 80F;
+            this.thoi_gian.DataPropertyName = "thoi_gian";
             this.thoi_gian.HeaderText = "Thời Gian";
             this.thoi_gian.MinimumWidth = 6;
             this.thoi_gian.Name = "thoi_gian";
@@ -119,7 +121,7 @@
             // dia_diem
             // 
             this.dia_diem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dia_diem.FillWeight = 80F;
+            this.dia_diem.DataPropertyName = "dia_diem";
             this.dia_diem.HeaderText = "Địa Điểm";
             this.dia_diem.MinimumWidth = 6;
             this.dia_diem.Name = "dia_diem";
@@ -127,7 +129,8 @@
             // so_tin_chi
             // 
             this.so_tin_chi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.so_tin_chi.FillWeight = 30F;
+            this.so_tin_chi.DataPropertyName = "so_tin_chi";
+            this.so_tin_chi.FillWeight = 50F;
             this.so_tin_chi.HeaderText = "Số Tín Chỉ";
             this.so_tin_chi.MinimumWidth = 6;
             this.so_tin_chi.Name = "so_tin_chi";
@@ -135,7 +138,8 @@
             // so_tiet
             // 
             this.so_tiet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.so_tiet.FillWeight = 30F;
+            this.so_tiet.DataPropertyName = "so_tiet";
+            this.so_tiet.FillWeight = 50F;
             this.so_tiet.HeaderText = "Số Tiết";
             this.so_tiet.MinimumWidth = 6;
             this.so_tiet.Name = "so_tiet";
@@ -143,7 +147,8 @@
             // so_dk
             // 
             this.so_dk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.so_dk.FillWeight = 30F;
+            this.so_dk.DataPropertyName = "so_dk";
+            this.so_dk.FillWeight = 50F;
             this.so_dk.HeaderText = "Số Đăng Kí";
             this.so_dk.MinimumWidth = 6;
             this.so_dk.Name = "so_dk";
@@ -151,7 +156,7 @@
             // hoc_phi
             // 
             this.hoc_phi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.hoc_phi.FillWeight = 80F;
+            this.hoc_phi.DataPropertyName = "hoc_phi";
             this.hoc_phi.HeaderText = "Học Phí";
             this.hoc_phi.MinimumWidth = 6;
             this.hoc_phi.Name = "hoc_phi";
@@ -159,6 +164,7 @@
             // ghi_chu
             // 
             this.ghi_chu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ghi_chu.DataPropertyName = "ghi_chu";
             this.ghi_chu.HeaderText = "Ghi Chú";
             this.ghi_chu.MinimumWidth = 6;
             this.ghi_chu.Name = "ghi_chu";
@@ -190,6 +196,7 @@
             this.btn_Update.TabIndex = 18;
             this.btn_Update.Text = "Update";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Xoa
             // 
@@ -231,6 +238,7 @@
             this.btn_Thoat.TabIndex = 21;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // label8
             // 
@@ -295,6 +303,7 @@
             this.btn_TimKiem.Size = new System.Drawing.Size(45, 42);
             this.btn_TimKiem.TabIndex = 25;
             this.btn_TimKiem.UseVisualStyleBackColor = true;
+            this.btn_TimKiem.Click += new System.EventHandler(this.btn_TimKiem_Click);
             // 
             // FormNhapMonHoc
             // 
@@ -304,6 +313,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dtgrv);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNhapMonHoc";
             this.Text = "FormNhapMonHoc";
             this.Load += new System.EventHandler(this.FormNhapMonHoc_Load);
