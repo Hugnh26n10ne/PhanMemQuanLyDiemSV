@@ -62,6 +62,9 @@
     <Compile Include="Form\FormNhapDiem.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\FormThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
@@ -76,6 +79,15 @@
     </Compile>
     <Compile Include="Form\FormMonHoc.designer.cs">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormThemTaiKhoan.Designer.cs">
+      <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormThongTin.Designer.cs">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormRePassword.cs">
       <SubType>Form</SubType>
@@ -137,6 +149,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormMonHoc.resx">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormThemTaiKhoan.resx">
+      <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormThongTin.resx">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
