@@ -56,6 +56,15 @@
     <Compile Include="Form\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\FormNhapThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormNhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\Formdiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,11 +74,38 @@
     <Compile Include="Form\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\FormNhapThongTin.Designer.cs">
+      <DependentUpon>FormNhapThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormNhapDiem.designer.cs">
+      <DependentUpon>FormNhapDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMonHoc.designer.cs">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormThemTaiKhoan.Designer.cs">
+      <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormThongTin.Designer.cs">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormRePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormNhapMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FormRePassword.Designer.cs">
       <DependentUpon>FormRePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormNhapMonHoc.Designer.cs">
+      <DependentUpon>FormNhapMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormQuenMK.cs">
       <SubType>Form</SubType>
@@ -95,8 +131,15 @@
     <EmbeddedResource Include="Form\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormNhapMonHoc.resx">
+      <DependentUpon>FormNhapMonHoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormRePassword.resx">
       <DependentUpon>FormRePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormNhapThongTin.resx">
+      <DependentUpon>FormNhapThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormQuenMK.resx">
       <DependentUpon>FormQuenMK.cs</DependentUpon>
@@ -107,6 +150,18 @@
     <EmbeddedResource Include="Form\FormDangKii.resx">
       <DependentUpon>FormDangKii.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormNhapDiem.resx">
+      <DependentUpon>FormNhapDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormMonHoc.resx">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormThemTaiKhoan.resx">
+      <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormThongTin.resx">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Formdiem.resx">
       <DependentUpon>Formdiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,7 +169,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -191,7 +252,11 @@
     <None Include="Resources\add-friend.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\shape1.png" />
+    <None Include="Resources\search.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

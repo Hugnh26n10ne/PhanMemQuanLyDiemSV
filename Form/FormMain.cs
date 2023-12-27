@@ -94,32 +94,38 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_MonHoc_Click(object sender, EventArgs e)
         {
-
+            FormMonHoc fmh = new FormMonHoc();
+            fmh.Show();
         }
 
         private void pbx_MonHoc_Click(object sender, EventArgs e)
         {
-
+            FormMonHoc fmh = new FormMonHoc();
+            fmh.Show();
         }
 
         private void lb_MonHoc_Click(object sender, EventArgs e)
         {
-
+            FormMonHoc fmh = new FormMonHoc();
+            fmh.Show();
         }
 
         private void pn_ThongTin_Click(object sender, EventArgs e)
         {
-
+            FormThongTin ftt = new FormThongTin();
+            ftt.Show();
         }
 
         private void pbx_ThongTin_Click(object sender, EventArgs e)
         {
-
+            FormThongTin ftt = new FormThongTin();
+            ftt.Show();
         }
 
         private void lb_ThongTin_Click(object sender, EventArgs e)
         {
-
+            FormThongTin ftt = new FormThongTin();
+            ftt.Show();
         }
 
         private void pn_DiemTB_Click(object sender, EventArgs e)
@@ -139,17 +145,20 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_NhapDiem_Click(object sender, EventArgs e)
         {
-
+            FormNhapDiem fnd = new FormNhapDiem();
+            fnd.Show();
         }
 
         private void pbx_NhapDiem_Click(object sender, EventArgs e)
         {
-
+            FormNhapDiem fnd = new FormNhapDiem();
+            fnd.Show();
         }
 
         private void lb_NhapDiem_Click(object sender, EventArgs e)
         {
-
+            FormNhapDiem fnd = new FormNhapDiem();
+            fnd.Show();
         }
 
         private void pn_NhapMonHoc_Click(object sender, EventArgs e)
@@ -184,17 +193,20 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_ThemTK_Click(object sender, EventArgs e)
         {
-
+            FormThemTaiKhoan fttk = new FormThemTaiKhoan();
+            fttk.Show();
         }
 
         private void pbx_ThemTK_Click(object sender, EventArgs e)
         {
-
+            FormThemTaiKhoan fttk = new FormThemTaiKhoan();
+            fttk.Show();
         }
 
         private void lb_ThemTK_Click(object sender, EventArgs e)
         {
-
+            FormThemTaiKhoan fttk = new FormThemTaiKhoan();
+            fttk.Show();
         }
     }
 }
