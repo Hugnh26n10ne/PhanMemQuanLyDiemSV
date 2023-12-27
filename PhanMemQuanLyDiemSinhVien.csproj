@@ -53,8 +53,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
+    <Compile Include="Form\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\FormThemTaiKhoan.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormThemTaiKhoan.Designer.cs">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
@@ -65,9 +71,48 @@
     <Compile Include="Form\FormThongTin.Designer.cs">
       <DependentUpon>FormThongTin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\FormRePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormRePassword.Designer.cs">
+      <DependentUpon>FormRePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormQuenMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormQuenMK.Designer.cs">
+      <DependentUpon>FormQuenMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormDangKii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDangKii.Designer.cs">
+      <DependentUpon>FormDangKii.cs</DependentUpon>
+    </Compile>
     <Compile Include="Function\cls_Function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormRePassword.resx">
+      <DependentUpon>FormRePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormQuenMK.resx">
+      <DependentUpon>FormQuenMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormDangKii.resx">
+      <DependentUpon>FormDangKii.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormThemTaiKhoan.resx">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +159,48 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dictionary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fountain-pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notebook %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-friend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shape1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemTaiKhoan));
             this.dtgrv_BangThongTin = new System.Windows.Forms.DataGridView();
             this.TaiKhoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,13 +55,13 @@
             this.MatKhau,
             this.ChucVu,
             this.TrangThai});
-            this.dtgrv_BangThongTin.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dtgrv_BangThongTin.Location = new System.Drawing.Point(101, 84);
-            this.dtgrv_BangThongTin.Name = "dtgrv_BangThongTin";
-            this.dtgrv_BangThongTin.RowHeadersWidth = 82;
-            this.dtgrv_BangThongTin.RowTemplate.Height = 33;
-            this.dtgrv_BangThongTin.Size = new System.Drawing.Size(1241, 637);
-            this.dtgrv_BangThongTin.TabIndex = 2;
+            this.dtgrv_BangThongTIn.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dtgrv_BangThongTIn.Location = new System.Drawing.Point(101, 84);
+            this.dtgrv_BangThongTIn.Name = "dtgrv_BangThongTIn";
+            this.dtgrv_BangThongTIn.RowHeadersWidth = 82;
+            this.dtgrv_BangThongTIn.RowTemplate.Height = 33;
+            this.dtgrv_BangThongTIn.Size = new System.Drawing.Size(1241, 637);
+            this.dtgrv_BangThongTIn.TabIndex = 2;
             // 
             // TaiKhoan
             // 
@@ -105,18 +106,19 @@
             this.panel1.Controls.Add(this.btn_CapNhat);
             this.panel1.Controls.Add(this.btn_XuatFile);
             this.panel1.Controls.Add(this.btn_Xoa);
-            this.panel1.Location = new System.Drawing.Point(101, 833);
+            this.panel1.Location = new System.Drawing.Point(67, 533);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1241, 155);
+            this.panel1.Size = new System.Drawing.Size(827, 99);
             this.panel1.TabIndex = 3;
             // 
             // btn_Thoat
             // 
             this.btn_Thoat.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Thoat.ForeColor = System.Drawing.Color.Red;
-            this.btn_Thoat.Location = new System.Drawing.Point(970, 61);
+            this.btn_Thoat.Location = new System.Drawing.Point(910, 61);
             this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(128, 50);
+            this.btn_Thoat.Size = new System.Drawing.Size(85, 32);
             this.btn_Thoat.TabIndex = 12;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.UseVisualStyleBackColor = true;
@@ -126,9 +128,10 @@
             // 
             this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Luu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_Luu.Location = new System.Drawing.Point(79, 61);
+            this.btn_Luu.Location = new System.Drawing.Point(53, 39);
+            this.btn_Luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(125, 50);
+            this.btn_Luu.Size = new System.Drawing.Size(83, 32);
             this.btn_Luu.TabIndex = 8;
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.UseVisualStyleBackColor = true;
@@ -138,9 +141,10 @@
             // 
             this.btn_CapNhat.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CapNhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btn_CapNhat.Location = new System.Drawing.Point(279, 61);
+            this.btn_CapNhat.Location = new System.Drawing.Point(186, 39);
+            this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_CapNhat.Name = "btn_CapNhat";
-            this.btn_CapNhat.Size = new System.Drawing.Size(150, 50);
+            this.btn_CapNhat.Size = new System.Drawing.Size(100, 32);
             this.btn_CapNhat.TabIndex = 9;
             this.btn_CapNhat.Text = "Cập Nhật ";
             this.btn_CapNhat.UseVisualStyleBackColor = true;
@@ -149,9 +153,10 @@
             // 
             this.btn_XuatFile.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_XuatFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_XuatFile.Location = new System.Drawing.Point(700, 61);
+            this.btn_XuatFile.Location = new System.Drawing.Point(467, 39);
+            this.btn_XuatFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_XuatFile.Name = "btn_XuatFile";
-            this.btn_XuatFile.Size = new System.Drawing.Size(204, 50);
+            this.btn_XuatFile.Size = new System.Drawing.Size(137, 50);
             this.btn_XuatFile.TabIndex = 11;
             this.btn_XuatFile.Text = "Xuất File Excel";
             this.btn_XuatFile.UseVisualStyleBackColor = true;
@@ -160,9 +165,10 @@
             // 
             this.btn_Xoa.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Xoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_Xoa.Location = new System.Drawing.Point(500, 61);
+            this.btn_Xoa.Location = new System.Drawing.Point(333, 39);
+            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(129, 50);
+            this.btn_Xoa.Size = new System.Drawing.Size(86, 32);
             this.btn_Xoa.TabIndex = 10;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = true;
@@ -170,16 +176,14 @@
             // 
             // FormThemTaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1672, 1085);
+            this.ClientSize = new System.Drawing.Size(1115, 675);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dtgrv_BangThongTin);
+            this.Controls.Add(this.dtgrv_BangThongTIn);
             this.Name = "FormThemTaiKhoan";
             this.Text = "FormThemTaiKhoan";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormThemTaiKhoan_FormClosing);
-            this.Load += new System.EventHandler(this.FormThemTaiKhoan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangThongTin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangThongTIn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
