@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
+    <Compile Include="Form\FormLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLop.Designer.cs">
+      <DependentUpon>FormLop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,11 +83,11 @@
     <Compile Include="Form\FormThemTaiKhoan.Designer.cs">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\FormThongTin.cs">
+    <Compile Include="Form\FormThongTinChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormThongTin.Designer.cs">
-      <DependentUpon>FormThongTin.cs</DependentUpon>
+    <Compile Include="Form\FormThongTinChiTiet.Designer.cs">
+      <DependentUpon>FormThongTinChiTiet.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormRePassword.cs">
       <SubType>Form</SubType>
@@ -110,6 +116,9 @@
     <Compile Include="Function\cls_Function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\FormLop.resx">
+      <DependentUpon>FormLop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,8 +140,8 @@
     <EmbeddedResource Include="Form\FormThemTaiKhoan.resx">
       <DependentUpon>FormThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormThongTin.resx">
-      <DependentUpon>FormThongTin.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormThongTinChiTiet.resx">
+      <DependentUpon>FormThongTinChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormDiem.resx">
       <DependentUpon>FormDiem.cs</DependentUpon>
