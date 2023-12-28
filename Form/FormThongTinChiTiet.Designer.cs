@@ -1,6 +1,6 @@
 ﻿namespace PhanMemQuanLyDiemSinhVien
 {
-    partial class FormThongTin
+    partial class FormThongTinChiTiet
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongTin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThongTinChiTiet));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dtp_NgaySInh = new System.Windows.Forms.DateTimePicker();
@@ -65,16 +65,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("UTM Alexander", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox1.Location = new System.Drawing.Point(21, 27);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(1094, 507);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -109,9 +109,9 @@
             this.groupBox3.Controls.Add(this.lb_HoVaTen);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox3.Location = new System.Drawing.Point(191, 32);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(930, 483);
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
@@ -123,7 +123,7 @@
             this.dtp_NgaySInh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_NgaySInh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtp_NgaySInh.Location = new System.Drawing.Point(120, 182);
-            this.dtp_NgaySInh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_NgaySInh.Margin = new System.Windows.Forms.Padding(2);
             this.dtp_NgaySInh.Name = "dtp_NgaySInh";
             this.dtp_NgaySInh.Size = new System.Drawing.Size(271, 27);
             this.dtp_NgaySInh.TabIndex = 27;
@@ -132,7 +132,7 @@
             // 
             this.cbx_GioiTinh.FormattingEnabled = true;
             this.cbx_GioiTinh.Location = new System.Drawing.Point(120, 238);
-            this.cbx_GioiTinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_GioiTinh.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_GioiTinh.Name = "cbx_GioiTinh";
             this.cbx_GioiTinh.Size = new System.Drawing.Size(123, 45);
             this.cbx_GioiTinh.TabIndex = 26;
@@ -140,7 +140,7 @@
             // tbx_TrangThai
             // 
             this.tbx_TrangThai.Location = new System.Drawing.Point(627, 365);
-            this.tbx_TrangThai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_TrangThai.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_TrangThai.Name = "tbx_TrangThai";
             this.tbx_TrangThai.Size = new System.Drawing.Size(273, 44);
             this.tbx_TrangThai.TabIndex = 25;
@@ -148,7 +148,7 @@
             // tbx_Lop
             // 
             this.tbx_Lop.Location = new System.Drawing.Point(627, 301);
-            this.tbx_Lop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_Lop.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_Lop.Name = "tbx_Lop";
             this.tbx_Lop.Size = new System.Drawing.Size(273, 44);
             this.tbx_Lop.TabIndex = 24;
@@ -156,7 +156,7 @@
             // tbx_Nganh
             // 
             this.tbx_Nganh.Location = new System.Drawing.Point(627, 237);
-            this.tbx_Nganh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_Nganh.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_Nganh.Name = "tbx_Nganh";
             this.tbx_Nganh.Size = new System.Drawing.Size(273, 44);
             this.tbx_Nganh.TabIndex = 23;
@@ -164,7 +164,7 @@
             // tbx_Khoa
             // 
             this.tbx_Khoa.Location = new System.Drawing.Point(627, 173);
-            this.tbx_Khoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_Khoa.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_Khoa.Name = "tbx_Khoa";
             this.tbx_Khoa.Size = new System.Drawing.Size(273, 44);
             this.tbx_Khoa.TabIndex = 22;
@@ -172,7 +172,7 @@
             // tbx_Email
             // 
             this.tbx_Email.Location = new System.Drawing.Point(627, 109);
-            this.tbx_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_Email.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_Email.Name = "tbx_Email";
             this.tbx_Email.Size = new System.Drawing.Size(273, 44);
             this.tbx_Email.TabIndex = 21;
@@ -180,7 +180,7 @@
             // tbx_SoDienThoai
             // 
             this.tbx_SoDienThoai.Location = new System.Drawing.Point(627, 45);
-            this.tbx_SoDienThoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_SoDienThoai.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_SoDienThoai.Name = "tbx_SoDienThoai";
             this.tbx_SoDienThoai.Size = new System.Drawing.Size(273, 44);
             this.tbx_SoDienThoai.TabIndex = 20;
@@ -188,7 +188,7 @@
             // tbx_DanToc
             // 
             this.tbx_DanToc.Location = new System.Drawing.Point(120, 365);
-            this.tbx_DanToc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_DanToc.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_DanToc.Name = "tbx_DanToc";
             this.tbx_DanToc.Size = new System.Drawing.Size(271, 44);
             this.tbx_DanToc.TabIndex = 19;
@@ -196,7 +196,7 @@
             // tbx_QueQuan
             // 
             this.tbx_QueQuan.Location = new System.Drawing.Point(120, 301);
-            this.tbx_QueQuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_QueQuan.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_QueQuan.Name = "tbx_QueQuan";
             this.tbx_QueQuan.Size = new System.Drawing.Size(271, 44);
             this.tbx_QueQuan.TabIndex = 18;
@@ -204,7 +204,7 @@
             // tbx_MaSinhVien
             // 
             this.tbx_MaSinhVien.Location = new System.Drawing.Point(120, 109);
-            this.tbx_MaSinhVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_MaSinhVien.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_MaSinhVien.Name = "tbx_MaSinhVien";
             this.tbx_MaSinhVien.Size = new System.Drawing.Size(271, 44);
             this.tbx_MaSinhVien.TabIndex = 15;
@@ -212,7 +212,7 @@
             // tbx_HoVaTen
             // 
             this.tbx_HoVaTen.Location = new System.Drawing.Point(120, 45);
-            this.tbx_HoVaTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbx_HoVaTen.Margin = new System.Windows.Forms.Padding(2);
             this.tbx_HoVaTen.Name = "tbx_HoVaTen";
             this.tbx_HoVaTen.Size = new System.Drawing.Size(271, 44);
             this.tbx_HoVaTen.TabIndex = 14;
@@ -353,9 +353,9 @@
             // 
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Location = new System.Drawing.Point(11, 40);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(155, 216);
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
@@ -363,23 +363,23 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(16, 28);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(127, 127);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // FormThongTin
+            // FormThongTinChiTiet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(1140, 673);
+            this.ClientSize = new System.Drawing.Size(1143, 552);
             this.Controls.Add(this.groupBox1);
-            this.MinimumSize = new System.Drawing.Size(1736, 1122);
-            this.Name = "FormThongTin";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "FormThongTinChiTiet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormThongTin";
+            this.Text = "Phần mềm quản lý điểm sinh viên";
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

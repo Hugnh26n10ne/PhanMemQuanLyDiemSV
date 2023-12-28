@@ -56,29 +56,17 @@
     <Compile Include="Form\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormNhapThongTin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\FormNhapDiem.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form\FormThemTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Formdiem.cs">
+    <Compile Include="Form\FormDiem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Formdiem.Designer.cs">
-      <DependentUpon>Formdiem.cs</DependentUpon>
+    <Compile Include="Form\FormDiem.Designer.cs">
+      <DependentUpon>FormDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\FormNhapThongTin.Designer.cs">
-      <DependentUpon>FormNhapThongTin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\FormNhapDiem.designer.cs">
-      <DependentUpon>FormNhapDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormMonHoc.cs">
       <SubType>Form</SubType>
@@ -98,14 +86,8 @@
     <Compile Include="Form\FormRePassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormNhapMonHoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form\FormRePassword.Designer.cs">
       <DependentUpon>FormRePassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form\FormNhapMonHoc.Designer.cs">
-      <DependentUpon>FormNhapMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormQuenMK.cs">
       <SubType>Form</SubType>
@@ -131,15 +113,8 @@
     <EmbeddedResource Include="Form\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormNhapMonHoc.resx">
-      <DependentUpon>FormNhapMonHoc.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormRePassword.resx">
       <DependentUpon>FormRePassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormNhapThongTin.resx">
-      <DependentUpon>FormNhapThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormQuenMK.resx">
       <DependentUpon>FormQuenMK.cs</DependentUpon>
@@ -150,9 +125,6 @@
     <EmbeddedResource Include="Form\FormDangKii.resx">
       <DependentUpon>FormDangKii.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\FormNhapDiem.resx">
-      <DependentUpon>FormNhapDiem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormMonHoc.resx">
       <DependentUpon>FormMonHoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,8 +134,8 @@
     <EmbeddedResource Include="Form\FormThongTin.resx">
       <DependentUpon>FormThongTin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Formdiem.resx">
-      <DependentUpon>Formdiem.cs</DependentUpon>
+    <EmbeddedResource Include="Form\FormDiem.resx">
+      <DependentUpon>FormDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -3,5 +3,5 @@
 .vs/
 /.vs/
 /[Cc]onnected Services/
-
+UpgrageLog*.htm
 *.sqlite

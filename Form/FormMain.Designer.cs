@@ -48,15 +48,6 @@
             this.pn_ThemTK = new System.Windows.Forms.Panel();
             this.lb_ThemTK = new System.Windows.Forms.Label();
             this.pbx_ThemTK = new System.Windows.Forms.PictureBox();
-            this.pn_NhapThongTin = new System.Windows.Forms.Panel();
-            this.lb_NhapThongTin = new System.Windows.Forms.Label();
-            this.pbx_NhapThongTin = new System.Windows.Forms.PictureBox();
-            this.pn_NhapMonHoc = new System.Windows.Forms.Panel();
-            this.lb_NhapMonHoc = new System.Windows.Forms.Label();
-            this.pbx_NhapMonHoc = new System.Windows.Forms.PictureBox();
-            this.pn_NhapDiem = new System.Windows.Forms.Panel();
-            this.lb_NhapDiem = new System.Windows.Forms.Label();
-            this.pbx_NhapDiem = new System.Windows.Forms.PictureBox();
             this.pn_ThongTin = new System.Windows.Forms.Panel();
             this.lb_ThongTin = new System.Windows.Forms.Label();
             this.pbx_ThongTin = new System.Windows.Forms.PictureBox();
@@ -79,12 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx_DTB)).BeginInit();
             this.pn_ThemTK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_ThemTK)).BeginInit();
-            this.pn_NhapThongTin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_NhapThongTin)).BeginInit();
-            this.pn_NhapMonHoc.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_NhapMonHoc)).BeginInit();
-            this.pn_NhapDiem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_NhapDiem)).BeginInit();
             this.pn_ThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_ThongTin)).BeginInit();
             this.pn_MonHoc.SuspendLayout();
@@ -240,12 +225,10 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.AutoScroll = true;
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.pn_DiemTB);
             this.panel4.Controls.Add(this.pn_ThemTK);
-            this.panel4.Controls.Add(this.pn_NhapThongTin);
-            this.panel4.Controls.Add(this.pn_NhapMonHoc);
-            this.panel4.Controls.Add(this.pn_NhapDiem);
             this.panel4.Controls.Add(this.pn_ThongTin);
             this.panel4.Controls.Add(this.pn_MonHoc);
             this.panel4.Controls.Add(this.pn_Diem);
@@ -260,7 +243,7 @@
             this.pn_DiemTB.Controls.Add(this.lb_DTB);
             this.pn_DiemTB.Controls.Add(this.pbx_DTB);
             this.pn_DiemTB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_DiemTB.Location = new System.Drawing.Point(668, 105);
+            this.pn_DiemTB.Location = new System.Drawing.Point(189, 20);
             this.pn_DiemTB.Name = "pn_DiemTB";
             this.pn_DiemTB.Size = new System.Drawing.Size(169, 155);
             this.pn_DiemTB.TabIndex = 9;
@@ -294,7 +277,7 @@
             this.pn_ThemTK.Controls.Add(this.lb_ThemTK);
             this.pn_ThemTK.Controls.Add(this.pbx_ThemTK);
             this.pn_ThemTK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_ThemTK.Location = new System.Drawing.Point(668, 298);
+            this.pn_ThemTK.Location = new System.Drawing.Point(707, 386);
             this.pn_ThemTK.Name = "pn_ThemTK";
             this.pn_ThemTK.Size = new System.Drawing.Size(169, 155);
             this.pn_ThemTK.TabIndex = 12;
@@ -322,115 +305,13 @@
             this.pbx_ThemTK.TabStop = false;
             this.pbx_ThemTK.Click += new System.EventHandler(this.pbx_ThemTK_Click);
             // 
-            // pn_NhapThongTin
-            // 
-            this.pn_NhapThongTin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pn_NhapThongTin.Controls.Add(this.lb_NhapThongTin);
-            this.pn_NhapThongTin.Controls.Add(this.pbx_NhapThongTin);
-            this.pn_NhapThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_NhapThongTin.Location = new System.Drawing.Point(456, 298);
-            this.pn_NhapThongTin.Name = "pn_NhapThongTin";
-            this.pn_NhapThongTin.Size = new System.Drawing.Size(169, 155);
-            this.pn_NhapThongTin.TabIndex = 15;
-            this.pn_NhapThongTin.Click += new System.EventHandler(this.pn_NhapThongTin_Click);
-            // 
-            // lb_NhapThongTin
-            // 
-            this.lb_NhapThongTin.AutoSize = true;
-            this.lb_NhapThongTin.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NhapThongTin.Location = new System.Drawing.Point(15, 114);
-            this.lb_NhapThongTin.Name = "lb_NhapThongTin";
-            this.lb_NhapThongTin.Size = new System.Drawing.Size(141, 24);
-            this.lb_NhapThongTin.TabIndex = 4;
-            this.lb_NhapThongTin.Text = "Nhập thông tin";
-            this.lb_NhapThongTin.Click += new System.EventHandler(this.lb_NhapThongTin_Click);
-            // 
-            // pbx_NhapThongTin
-            // 
-            this.pbx_NhapThongTin.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.notebook__1_;
-            this.pbx_NhapThongTin.Location = new System.Drawing.Point(35, 11);
-            this.pbx_NhapThongTin.Name = "pbx_NhapThongTin";
-            this.pbx_NhapThongTin.Size = new System.Drawing.Size(100, 100);
-            this.pbx_NhapThongTin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_NhapThongTin.TabIndex = 3;
-            this.pbx_NhapThongTin.TabStop = false;
-            this.pbx_NhapThongTin.Click += new System.EventHandler(this.pbx_NhapThongTin_Click);
-            // 
-            // pn_NhapMonHoc
-            // 
-            this.pn_NhapMonHoc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pn_NhapMonHoc.Controls.Add(this.lb_NhapMonHoc);
-            this.pn_NhapMonHoc.Controls.Add(this.pbx_NhapMonHoc);
-            this.pn_NhapMonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_NhapMonHoc.Location = new System.Drawing.Point(240, 298);
-            this.pn_NhapMonHoc.Name = "pn_NhapMonHoc";
-            this.pn_NhapMonHoc.Size = new System.Drawing.Size(169, 155);
-            this.pn_NhapMonHoc.TabIndex = 13;
-            this.pn_NhapMonHoc.Click += new System.EventHandler(this.pn_NhapMonHoc_Click);
-            // 
-            // lb_NhapMonHoc
-            // 
-            this.lb_NhapMonHoc.AutoSize = true;
-            this.lb_NhapMonHoc.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NhapMonHoc.Location = new System.Drawing.Point(16, 114);
-            this.lb_NhapMonHoc.Name = "lb_NhapMonHoc";
-            this.lb_NhapMonHoc.Size = new System.Drawing.Size(138, 24);
-            this.lb_NhapMonHoc.TabIndex = 4;
-            this.lb_NhapMonHoc.Text = "Nhập môn học";
-            this.lb_NhapMonHoc.Click += new System.EventHandler(this.lb_NhapMonHoc_Click);
-            // 
-            // pbx_NhapMonHoc
-            // 
-            this.pbx_NhapMonHoc.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.laptop;
-            this.pbx_NhapMonHoc.Location = new System.Drawing.Point(35, 11);
-            this.pbx_NhapMonHoc.Name = "pbx_NhapMonHoc";
-            this.pbx_NhapMonHoc.Size = new System.Drawing.Size(100, 100);
-            this.pbx_NhapMonHoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_NhapMonHoc.TabIndex = 3;
-            this.pbx_NhapMonHoc.TabStop = false;
-            this.pbx_NhapMonHoc.Click += new System.EventHandler(this.pbx_NhapMonHoc_Click);
-            // 
-            // pn_NhapDiem
-            // 
-            this.pn_NhapDiem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pn_NhapDiem.Controls.Add(this.lb_NhapDiem);
-            this.pn_NhapDiem.Controls.Add(this.pbx_NhapDiem);
-            this.pn_NhapDiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_NhapDiem.Location = new System.Drawing.Point(32, 298);
-            this.pn_NhapDiem.Name = "pn_NhapDiem";
-            this.pn_NhapDiem.Size = new System.Drawing.Size(169, 155);
-            this.pn_NhapDiem.TabIndex = 10;
-            this.pn_NhapDiem.Click += new System.EventHandler(this.pn_NhapDiem_Click);
-            // 
-            // lb_NhapDiem
-            // 
-            this.lb_NhapDiem.AutoSize = true;
-            this.lb_NhapDiem.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NhapDiem.Location = new System.Drawing.Point(31, 114);
-            this.lb_NhapDiem.Name = "lb_NhapDiem";
-            this.lb_NhapDiem.Size = new System.Drawing.Size(108, 24);
-            this.lb_NhapDiem.TabIndex = 4;
-            this.lb_NhapDiem.Text = "Nhập điểm";
-            this.lb_NhapDiem.Click += new System.EventHandler(this.lb_NhapDiem_Click);
-            // 
-            // pbx_NhapDiem
-            // 
-            this.pbx_NhapDiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.fountain_pen;
-            this.pbx_NhapDiem.Location = new System.Drawing.Point(35, 11);
-            this.pbx_NhapDiem.Name = "pbx_NhapDiem";
-            this.pbx_NhapDiem.Size = new System.Drawing.Size(100, 100);
-            this.pbx_NhapDiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_NhapDiem.TabIndex = 3;
-            this.pbx_NhapDiem.TabStop = false;
-            this.pbx_NhapDiem.Click += new System.EventHandler(this.pbx_NhapDiem_Click);
-            // 
             // pn_ThongTin
             // 
             this.pn_ThongTin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pn_ThongTin.Controls.Add(this.lb_ThongTin);
             this.pn_ThongTin.Controls.Add(this.pbx_ThongTin);
             this.pn_ThongTin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_ThongTin.Location = new System.Drawing.Point(456, 105);
+            this.pn_ThongTin.Location = new System.Drawing.Point(189, 181);
             this.pn_ThongTin.Name = "pn_ThongTin";
             this.pn_ThongTin.Size = new System.Drawing.Size(169, 155);
             this.pn_ThongTin.TabIndex = 14;
@@ -464,7 +345,7 @@
             this.pn_MonHoc.Controls.Add(this.lb_MonHoc);
             this.pn_MonHoc.Controls.Add(this.pbx_MonHoc);
             this.pn_MonHoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_MonHoc.Location = new System.Drawing.Point(240, 105);
+            this.pn_MonHoc.Location = new System.Drawing.Point(14, 181);
             this.pn_MonHoc.Name = "pn_MonHoc";
             this.pn_MonHoc.Size = new System.Drawing.Size(169, 155);
             this.pn_MonHoc.TabIndex = 11;
@@ -498,7 +379,7 @@
             this.pn_Diem.Controls.Add(this.lb_Diem);
             this.pn_Diem.Controls.Add(this.pbx_Diem);
             this.pn_Diem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pn_Diem.Location = new System.Drawing.Point(32, 105);
+            this.pn_Diem.Location = new System.Drawing.Point(14, 20);
             this.pn_Diem.Name = "pn_Diem";
             this.pn_Diem.Size = new System.Drawing.Size(169, 155);
             this.pn_Diem.TabIndex = 8;
@@ -560,15 +441,6 @@
             this.pn_ThemTK.ResumeLayout(false);
             this.pn_ThemTK.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_ThemTK)).EndInit();
-            this.pn_NhapThongTin.ResumeLayout(false);
-            this.pn_NhapThongTin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_NhapThongTin)).EndInit();
-            this.pn_NhapMonHoc.ResumeLayout(false);
-            this.pn_NhapMonHoc.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_NhapMonHoc)).EndInit();
-            this.pn_NhapDiem.ResumeLayout(false);
-            this.pn_NhapDiem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_NhapDiem)).EndInit();
             this.pn_ThongTin.ResumeLayout(false);
             this.pn_ThongTin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_ThongTin)).EndInit();
@@ -597,15 +469,6 @@
         private System.Windows.Forms.Panel pn_ThemTK;
         private System.Windows.Forms.Label lb_ThemTK;
         private System.Windows.Forms.PictureBox pbx_ThemTK;
-        private System.Windows.Forms.Panel pn_NhapThongTin;
-        private System.Windows.Forms.Label lb_NhapThongTin;
-        private System.Windows.Forms.PictureBox pbx_NhapThongTin;
-        private System.Windows.Forms.Panel pn_NhapMonHoc;
-        private System.Windows.Forms.Label lb_NhapMonHoc;
-        private System.Windows.Forms.PictureBox pbx_NhapMonHoc;
-        private System.Windows.Forms.Panel pn_NhapDiem;
-        private System.Windows.Forms.Label lb_NhapDiem;
-        private System.Windows.Forms.PictureBox pbx_NhapDiem;
         private System.Windows.Forms.Panel pn_ThongTin;
         private System.Windows.Forms.Label lb_ThongTin;
         private System.Windows.Forms.PictureBox pbx_ThongTin;

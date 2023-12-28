@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace PhanMemQuanLyDiemSinhVien
 {
-    public partial class FormThongTin : Form
+    public partial class FormLop : Form
     {
-        public FormThongTin()
+        public FormLop()
         {
             InitializeComponent();
         }
+
     }
 }

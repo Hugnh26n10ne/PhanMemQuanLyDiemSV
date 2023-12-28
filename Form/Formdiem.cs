@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,16 +11,12 @@ using System.Windows.Forms;
 
 namespace PhanMemQuanLyDiemSinhVien
 {
-    public partial class Formdiem : Form
+    public partial class FormDiem : Form
     {
-        public Formdiem()
+        public FormDiem()
         {
             InitializeComponent();
         }
-
-        private void Formdiem_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+

@@ -72,6 +72,7 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pbx_Profile_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             FormDangNhap fdn = new FormDangNhap();
             fdn.Show();
@@ -79,17 +80,20 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_Diem_Click(object sender, EventArgs e)
         {
-
+            FormDiem fd = new FormDiem();
+            fd.Show();
         }
 
         private void pbx_Diem_Click(object sender, EventArgs e)
         {
-
+            FormDiem fd = new FormDiem();
+            fd.Show();
         }
 
         private void lb_Diem_Click(object sender, EventArgs e)
         {
-
+            FormDiem fd = new FormDiem();
+            fd.Show();
         }
 
         private void pn_MonHoc_Click(object sender, EventArgs e)
@@ -112,25 +116,25 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void pn_ThongTin_Click(object sender, EventArgs e)
         {
-            FormThongTin ftt = new FormThongTin();
+            FormThongTinChiTiet ftt = new FormThongTinChiTiet();
             ftt.Show();
         }
 
         private void pbx_ThongTin_Click(object sender, EventArgs e)
         {
-            FormThongTin ftt = new FormThongTin();
+            FormThongTinChiTiet ftt = new FormThongTinChiTiet();
             ftt.Show();
         }
 
         private void lb_ThongTin_Click(object sender, EventArgs e)
         {
-            FormThongTin ftt = new FormThongTin();
+            FormThongTinChiTiet ftt = new FormThongTinChiTiet();
             ftt.Show();
         }
 
         private void pn_DiemTB_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pbx_DTB_Click(object sender, EventArgs e)
@@ -139,54 +143,6 @@ namespace PhanMemQuanLyDiemSinhVien
         }
 
         private void lb_DTB_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pn_NhapDiem_Click(object sender, EventArgs e)
-        {
-            FormNhapDiem fnd = new FormNhapDiem();
-            fnd.Show();
-        }
-
-        private void pbx_NhapDiem_Click(object sender, EventArgs e)
-        {
-            FormNhapDiem fnd = new FormNhapDiem();
-            fnd.Show();
-        }
-
-        private void lb_NhapDiem_Click(object sender, EventArgs e)
-        {
-            FormNhapDiem fnd = new FormNhapDiem();
-            fnd.Show();
-        }
-
-        private void pn_NhapMonHoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbx_NhapMonHoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_NhapMonHoc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pn_NhapThongTin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbx_NhapThongTin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_NhapThongTin_Click(object sender, EventArgs e)
         {
 
         }
@@ -208,5 +164,7 @@ namespace PhanMemQuanLyDiemSinhVien
             FormThemTaiKhoan fttk = new FormThemTaiKhoan();
             fttk.Show();
         }
+
+
     }
 }

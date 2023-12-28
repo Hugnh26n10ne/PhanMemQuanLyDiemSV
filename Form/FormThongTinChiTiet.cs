@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PhanMemQuanLyDiemSinhVien
 {
-    public partial class FormNhapDiem: Form
+    public partial class FormThongTinChiTiet : Form
     {
-        public FormNhapDiem()
+        public FormThongTinChiTiet()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
