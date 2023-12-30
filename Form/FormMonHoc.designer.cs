@@ -54,10 +54,10 @@
             this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Thêm = new System.Windows.Forms.Button();
             this.btn_XuatExcel = new System.Windows.Forms.Button();
-            this.cbx_TKMonHoc = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonMonHoc = new System.Windows.Forms.ComboBox();
             this.tbx_TimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbx_TKChucVu = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonChucVu = new System.Windows.Forms.ComboBox();
             this.ln_chonhocki = new System.Windows.Forms.Label();
             this.gbx_NhapChiTietDiem = new System.Windows.Forms.GroupBox();
             this.tbx_GhiChu = new System.Windows.Forms.TextBox();
@@ -78,7 +78,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbx_MaMH = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbx_MaGV = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonGV = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_MonHoc)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -202,10 +202,10 @@
             this.groupBox1.Controls.Add(this.btn_Luu);
             this.groupBox1.Controls.Add(this.btn_Thêm);
             this.groupBox1.Controls.Add(this.btn_XuatExcel);
-            this.groupBox1.Controls.Add(this.cbx_TKMonHoc);
+            this.groupBox1.Controls.Add(this.cbx_ChonMonHoc);
             this.groupBox1.Controls.Add(this.tbx_TimKiem);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cbx_TKChucVu);
+            this.groupBox1.Controls.Add(this.cbx_ChonChucVu);
             this.groupBox1.Controls.Add(this.ln_chonhocki);
             this.groupBox1.Location = new System.Drawing.Point(14, 200);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -323,23 +323,23 @@
             this.btn_XuatExcel.Text = "Xuất Excel";
             this.btn_XuatExcel.UseVisualStyleBackColor = false;
             // 
-            // cbx_TKMonHoc
+            // cbx_ChonMonHoc
             // 
-            this.cbx_TKMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_TKMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_TKMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_TKMonHoc.FormattingEnabled = true;
-            this.cbx_TKMonHoc.Items.AddRange(new object[] {
+            this.cbx_ChonMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_ChonMonHoc.FormattingEnabled = true;
+            this.cbx_ChonMonHoc.Items.AddRange(new object[] {
             "Toán ",
             "Lý ",
             "Hóa ",
             "Lập trình C++"});
-            this.cbx_TKMonHoc.Location = new System.Drawing.Point(997, 72);
-            this.cbx_TKMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbx_TKMonHoc.Name = "cbx_TKMonHoc";
-            this.cbx_TKMonHoc.Size = new System.Drawing.Size(176, 31);
-            this.cbx_TKMonHoc.TabIndex = 28;
-            this.cbx_TKMonHoc.Text = "-Chọn tên môn-";
+            this.cbx_ChonMonHoc.Location = new System.Drawing.Point(997, 72);
+            this.cbx_ChonMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_ChonMonHoc.Name = "cbx_ChonMonHoc";
+            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonMonHoc.TabIndex = 28;
+            this.cbx_ChonMonHoc.Text = "-Chọn tên môn-";
             // 
             // tbx_TimKiem
             // 
@@ -361,22 +361,22 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Tên môn";
             // 
-            // cbx_TKChucVu
+            // cbx_ChonChucVu
             // 
-            this.cbx_TKChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_TKChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_TKChucVu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbx_TKChucVu.FormattingEnabled = true;
-            this.cbx_TKChucVu.Items.AddRange(new object[] {
+            this.cbx_ChonChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonChucVu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbx_ChonChucVu.FormattingEnabled = true;
+            this.cbx_ChonChucVu.Items.AddRange(new object[] {
             "Học kì 1",
             "Học kì 2",
             "Học kì 3"});
-            this.cbx_TKChucVu.Location = new System.Drawing.Point(997, 29);
-            this.cbx_TKChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbx_TKChucVu.Name = "cbx_TKChucVu";
-            this.cbx_TKChucVu.Size = new System.Drawing.Size(176, 31);
-            this.cbx_TKChucVu.TabIndex = 24;
-            this.cbx_TKChucVu.Text = "-Chọn tên giảng viên-";
+            this.cbx_ChonChucVu.Location = new System.Drawing.Point(997, 29);
+            this.cbx_ChonChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_ChonChucVu.Name = "cbx_ChonChucVu";
+            this.cbx_ChonChucVu.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonChucVu.TabIndex = 24;
+            this.cbx_ChonChucVu.Text = "-Chọn tên giảng viên-";
             // 
             // ln_chonhocki
             // 
@@ -411,7 +411,7 @@
             this.gbx_NhapChiTietDiem.Controls.Add(this.label5);
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_MaMH);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label4);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.cbx_MaGV);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.cbx_ChonGV);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label3);
             this.gbx_NhapChiTietDiem.Location = new System.Drawing.Point(14, 12);
             this.gbx_NhapChiTietDiem.Name = "gbx_NhapChiTietDiem";
@@ -576,14 +576,14 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Mã môn học";
             // 
-            // cbx_MaGV
+            // cbx_ChonGV
             // 
-            this.cbx_MaGV.FormattingEnabled = true;
-            this.cbx_MaGV.Location = new System.Drawing.Point(663, 29);
-            this.cbx_MaGV.Name = "cbx_MaGV";
-            this.cbx_MaGV.Size = new System.Drawing.Size(198, 31);
-            this.cbx_MaGV.TabIndex = 3;
-            this.cbx_MaGV.Text = "- Giảng Viên -";
+            this.cbx_ChonGV.FormattingEnabled = true;
+            this.cbx_ChonGV.Location = new System.Drawing.Point(663, 29);
+            this.cbx_ChonGV.Name = "cbx_ChonGV";
+            this.cbx_ChonGV.Size = new System.Drawing.Size(198, 31);
+            this.cbx_ChonGV.TabIndex = 3;
+            this.cbx_ChonGV.Text = "- Giảng Viên -";
             // 
             // label3
             // 
@@ -628,7 +628,7 @@
         private System.Windows.Forms.Button btn_CapNhat;
         private System.Windows.Forms.Button btn_Luu;
         private System.Windows.Forms.Button btn_Thêm;
-        private System.Windows.Forms.ComboBox cbx_TKChucVu;
+        private System.Windows.Forms.ComboBox cbx_ChonChucVu;
         private System.Windows.Forms.Label ln_chonhocki;
         private System.Windows.Forms.GroupBox gbx_NhapChiTietDiem;
         private System.Windows.Forms.TextBox tbx_GhiChu;
@@ -649,11 +649,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbx_MaMH;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbx_MaGV;
+        private System.Windows.Forms.ComboBox cbx_ChonGV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pbx_TimKiem;
         private System.Windows.Forms.Button btn_XuatExcel;
-        private System.Windows.Forms.ComboBox cbx_TKMonHoc;
+        private System.Windows.Forms.ComboBox cbx_ChonMonHoc;
         private System.Windows.Forms.TextBox tbx_TimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_Stt;

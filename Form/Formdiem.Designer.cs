@@ -69,20 +69,20 @@
             this.cbx_MaSV = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbx_NganhHoc = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonNganhHoc = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.btn_NhapExcel = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_CapNhat = new System.Windows.Forms.Button();
             this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Thêm = new System.Windows.Forms.Button();
             this.btn_XuatFileExcel = new System.Windows.Forms.Button();
-            this.cbx_monhoc = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonMonHoc = new System.Windows.Forms.ComboBox();
             this.tbx_TimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbx_Hocky = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonHocky = new System.Windows.Forms.ComboBox();
             this.ln_chonhocki = new System.Windows.Forms.Label();
-            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemSV)).BeginInit();
             this.gbx_NhapChiTietDiem.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -462,7 +462,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.cbx_NganhHoc);
+            this.groupBox1.Controls.Add(this.cbx_ChonNganhHoc);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.pbx_TimKiem);
             this.groupBox1.Controls.Add(this.btn_NhapExcel);
@@ -471,10 +471,10 @@
             this.groupBox1.Controls.Add(this.btn_Luu);
             this.groupBox1.Controls.Add(this.btn_Thêm);
             this.groupBox1.Controls.Add(this.btn_XuatFileExcel);
-            this.groupBox1.Controls.Add(this.cbx_monhoc);
+            this.groupBox1.Controls.Add(this.cbx_ChonMonHoc);
             this.groupBox1.Controls.Add(this.tbx_TimKiem);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cbx_Hocky);
+            this.groupBox1.Controls.Add(this.cbx_ChonHocky);
             this.groupBox1.Controls.Add(this.ln_chonhocki);
             this.groupBox1.Location = new System.Drawing.Point(14, 200);
             this.groupBox1.Name = "groupBox1";
@@ -482,22 +482,22 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             // 
-            // cbx_NganhHoc
+            // cbx_ChonNganhHoc
             // 
-            this.cbx_NganhHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_NganhHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_NganhHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_NganhHoc.FormattingEnabled = true;
-            this.cbx_NganhHoc.Items.AddRange(new object[] {
+            this.cbx_ChonNganhHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonNganhHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonNganhHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_ChonNganhHoc.FormattingEnabled = true;
+            this.cbx_ChonNganhHoc.Items.AddRange(new object[] {
             "Toán ",
             "Lý ",
             "Hóa ",
             "Lập trình C++"});
-            this.cbx_NganhHoc.Location = new System.Drawing.Point(862, 92);
-            this.cbx_NganhHoc.Name = "cbx_NganhHoc";
-            this.cbx_NganhHoc.Size = new System.Drawing.Size(157, 31);
-            this.cbx_NganhHoc.TabIndex = 38;
-            this.cbx_NganhHoc.Text = "-Chọn ngành học-";
+            this.cbx_ChonNganhHoc.Location = new System.Drawing.Point(862, 92);
+            this.cbx_ChonNganhHoc.Name = "cbx_ChonNganhHoc";
+            this.cbx_ChonNganhHoc.Size = new System.Drawing.Size(157, 31);
+            this.cbx_ChonNganhHoc.TabIndex = 38;
+            this.cbx_ChonNganhHoc.Text = "-Chọn ngành học-";
             // 
             // label9
             // 
@@ -509,6 +509,17 @@
             this.label9.Size = new System.Drawing.Size(62, 23);
             this.label9.TabIndex = 37;
             this.label9.Text = "Ngành";
+            // 
+            // pbx_TimKiem
+            // 
+            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.pbx_TimKiem.Location = new System.Drawing.Point(305, 78);
+            this.pbx_TimKiem.Name = "pbx_TimKiem";
+            this.pbx_TimKiem.Size = new System.Drawing.Size(31, 26);
+            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_TimKiem.TabIndex = 36;
+            this.pbx_TimKiem.TabStop = false;
             // 
             // btn_NhapExcel
             // 
@@ -604,22 +615,22 @@
             this.btn_XuatFileExcel.Text = "Xuất Excel";
             this.btn_XuatFileExcel.UseVisualStyleBackColor = false;
             // 
-            // cbx_monhoc
+            // cbx_ChonMonHoc
             // 
-            this.cbx_monhoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_monhoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_monhoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_monhoc.FormattingEnabled = true;
-            this.cbx_monhoc.Items.AddRange(new object[] {
+            this.cbx_ChonMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_ChonMonHoc.FormattingEnabled = true;
+            this.cbx_ChonMonHoc.Items.AddRange(new object[] {
             "Toán ",
             "Lý ",
             "Hóa ",
             "Lập trình C++"});
-            this.cbx_monhoc.Location = new System.Drawing.Point(862, 55);
-            this.cbx_monhoc.Name = "cbx_monhoc";
-            this.cbx_monhoc.Size = new System.Drawing.Size(157, 31);
-            this.cbx_monhoc.TabIndex = 28;
-            this.cbx_monhoc.Text = "-Chọn môn học-";
+            this.cbx_ChonMonHoc.Location = new System.Drawing.Point(862, 55);
+            this.cbx_ChonMonHoc.Name = "cbx_ChonMonHoc";
+            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(157, 31);
+            this.cbx_ChonMonHoc.TabIndex = 28;
+            this.cbx_ChonMonHoc.Text = "-Chọn môn học-";
             // 
             // tbx_TimKiem
             // 
@@ -641,21 +652,21 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Môn học";
             // 
-            // cbx_Hocky
+            // cbx_ChonHocky
             // 
-            this.cbx_Hocky.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_Hocky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_Hocky.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbx_Hocky.FormattingEnabled = true;
-            this.cbx_Hocky.Items.AddRange(new object[] {
+            this.cbx_ChonHocky.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonHocky.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonHocky.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbx_ChonHocky.FormattingEnabled = true;
+            this.cbx_ChonHocky.Items.AddRange(new object[] {
             "Học kì 1",
             "Học kì 2",
             "Học kì 3"});
-            this.cbx_Hocky.Location = new System.Drawing.Point(862, 18);
-            this.cbx_Hocky.Name = "cbx_Hocky";
-            this.cbx_Hocky.Size = new System.Drawing.Size(157, 31);
-            this.cbx_Hocky.TabIndex = 24;
-            this.cbx_Hocky.Text = "-Chọn học kỳ-";
+            this.cbx_ChonHocky.Location = new System.Drawing.Point(862, 18);
+            this.cbx_ChonHocky.Name = "cbx_ChonHocky";
+            this.cbx_ChonHocky.Size = new System.Drawing.Size(157, 31);
+            this.cbx_ChonHocky.TabIndex = 24;
+            this.cbx_ChonHocky.Text = "-Chọn học kỳ-";
             // 
             // ln_chonhocki
             // 
@@ -667,17 +678,6 @@
             this.ln_chonhocki.Size = new System.Drawing.Size(67, 23);
             this.ln_chonhocki.TabIndex = 25;
             this.ln_chonhocki.Text = "Học Kỳ ";
-            // 
-            // pbx_TimKiem
-            // 
-            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
-            this.pbx_TimKiem.Location = new System.Drawing.Point(305, 78);
-            this.pbx_TimKiem.Name = "pbx_TimKiem";
-            this.pbx_TimKiem.Size = new System.Drawing.Size(31, 26);
-            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_TimKiem.TabIndex = 36;
-            this.pbx_TimKiem.TabStop = false;
             // 
             // FormDiem
             // 
@@ -714,10 +714,10 @@
         private System.Windows.Forms.Button btn_Luu;
         private System.Windows.Forms.Button btn_Thêm;
         private System.Windows.Forms.Button btn_XuatFileExcel;
-        private System.Windows.Forms.ComboBox cbx_monhoc;
+        private System.Windows.Forms.ComboBox cbx_ChonMonHoc;
         private System.Windows.Forms.TextBox tbx_TimKiem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbx_Hocky;
+        private System.Windows.Forms.ComboBox cbx_ChonHocky;
         private System.Windows.Forms.Label ln_chonhocki;
         private System.Windows.Forms.PictureBox pbx_TimKiem;
         private System.Windows.Forms.ComboBox cbx_MaSV;
@@ -742,7 +742,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbx_MaHP;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cbx_NganhHoc;
+        private System.Windows.Forms.ComboBox cbx_ChonNganhHoc;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_Stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_MaSV;

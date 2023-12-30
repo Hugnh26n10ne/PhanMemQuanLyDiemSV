@@ -28,20 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemTaiKhoan));
             this.dtgrv_TaiKhoan = new System.Windows.Forms.DataGridView();
+            this.dtgrv_TK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.btn_NhapExcel = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_CapNhat = new System.Windows.Forms.Button();
             this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Thêm = new System.Windows.Forms.Button();
             this.btn_XuatExcel = new System.Windows.Forms.Button();
-            this.cbx_TKMonHoc = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonMonHoc = new System.Windows.Forms.ComboBox();
             this.tbx_TimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbx_TKChucVu = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonChucVu = new System.Windows.Forms.ComboBox();
             this.ln_chonhocki = new System.Windows.Forms.Label();
             this.gbx_NhapChiTietDiem = new System.Windows.Forms.GroupBox();
             this.tbx_MatKhau = new System.Windows.Forms.TextBox();
@@ -52,15 +56,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_ChucVu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
-            this.dtgrv_TK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_TaiKhoan)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.gbx_NhapChiTietDiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
+            this.gbx_NhapChiTietDiem.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgrv_TaiKhoan
@@ -74,14 +73,6 @@
             this.dtgrv_MatKhau,
             this.dtgrv_ChucVu,
             this.dtgrv_TrangThai});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgrv_TaiKhoan.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtgrv_TaiKhoan.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dtgrv_TaiKhoan.Location = new System.Drawing.Point(1, 228);
             this.dtgrv_TaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -90,6 +81,39 @@
             this.dtgrv_TaiKhoan.RowTemplate.Height = 33;
             this.dtgrv_TaiKhoan.Size = new System.Drawing.Size(1132, 381);
             this.dtgrv_TaiKhoan.TabIndex = 2;
+            // 
+            // dtgrv_TK
+            // 
+            this.dtgrv_TK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TK.HeaderText = "Tài Khoản ";
+            this.dtgrv_TK.MinimumWidth = 10;
+            this.dtgrv_TK.Name = "dtgrv_TK";
+            // 
+            // dtgrv_MatKhau
+            // 
+            this.dtgrv_MatKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_MatKhau.DataPropertyName = "mat_khau";
+            this.dtgrv_MatKhau.HeaderText = "Mật Khẩu";
+            this.dtgrv_MatKhau.MinimumWidth = 10;
+            this.dtgrv_MatKhau.Name = "dtgrv_MatKhau";
+            // 
+            // dtgrv_ChucVu
+            // 
+            this.dtgrv_ChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_ChucVu.DataPropertyName = "idPer";
+            this.dtgrv_ChucVu.HeaderText = "Chức Vụ";
+            this.dtgrv_ChucVu.MinimumWidth = 10;
+            this.dtgrv_ChucVu.Name = "dtgrv_ChucVu";
+            this.dtgrv_ChucVu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // dtgrv_TrangThai
+            // 
+            this.dtgrv_TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TrangThai.DataPropertyName = "status";
+            this.dtgrv_TrangThai.HeaderText = "Trạng Thái";
+            this.dtgrv_TrangThai.MinimumWidth = 10;
+            this.dtgrv_TrangThai.Name = "dtgrv_TrangThai";
+            this.dtgrv_TrangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // groupBox1
             // 
@@ -102,10 +126,10 @@
             this.groupBox1.Controls.Add(this.btn_Luu);
             this.groupBox1.Controls.Add(this.btn_Thêm);
             this.groupBox1.Controls.Add(this.btn_XuatExcel);
-            this.groupBox1.Controls.Add(this.cbx_TKMonHoc);
+            this.groupBox1.Controls.Add(this.cbx_ChonMonHoc);
             this.groupBox1.Controls.Add(this.tbx_TimKiem);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cbx_TKChucVu);
+            this.groupBox1.Controls.Add(this.cbx_ChonChucVu);
             this.groupBox1.Controls.Add(this.ln_chonhocki);
             this.groupBox1.Location = new System.Drawing.Point(3, 107);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -114,6 +138,18 @@
             this.groupBox1.Size = new System.Drawing.Size(1130, 113);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
+            // 
+            // pbx_TimKiem
+            // 
+            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.pbx_TimKiem.Location = new System.Drawing.Point(343, 65);
+            this.pbx_TimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbx_TimKiem.Name = "pbx_TimKiem";
+            this.pbx_TimKiem.Size = new System.Drawing.Size(26, 30);
+            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_TimKiem.TabIndex = 36;
+            this.pbx_TimKiem.TabStop = false;
             // 
             // btn_NhapExcel
             // 
@@ -211,23 +247,23 @@
             this.btn_XuatExcel.Text = "Xuất Excel";
             this.btn_XuatExcel.UseVisualStyleBackColor = false;
             // 
-            // cbx_TKMonHoc
+            // cbx_ChonMonHoc
             // 
-            this.cbx_TKMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_TKMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_TKMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_TKMonHoc.FormattingEnabled = true;
-            this.cbx_TKMonHoc.Items.AddRange(new object[] {
+            this.cbx_ChonMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_ChonMonHoc.FormattingEnabled = true;
+            this.cbx_ChonMonHoc.Items.AddRange(new object[] {
             "Toán ",
             "Lý ",
             "Hóa ",
             "Lập trình C++"});
-            this.cbx_TKMonHoc.Location = new System.Drawing.Point(945, 65);
-            this.cbx_TKMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbx_TKMonHoc.Name = "cbx_TKMonHoc";
-            this.cbx_TKMonHoc.Size = new System.Drawing.Size(176, 31);
-            this.cbx_TKMonHoc.TabIndex = 28;
-            this.cbx_TKMonHoc.Text = "-Chọn trạng thái-";
+            this.cbx_ChonMonHoc.Location = new System.Drawing.Point(945, 65);
+            this.cbx_ChonMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_ChonMonHoc.Name = "cbx_ChonMonHoc";
+            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonMonHoc.TabIndex = 28;
+            this.cbx_ChonMonHoc.Text = "-Chọn trạng thái-";
             // 
             // tbx_TimKiem
             // 
@@ -249,22 +285,22 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Trạng thái";
             // 
-            // cbx_TKChucVu
+            // cbx_ChonChucVu
             // 
-            this.cbx_TKChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_TKChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_TKChucVu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbx_TKChucVu.FormattingEnabled = true;
-            this.cbx_TKChucVu.Items.AddRange(new object[] {
+            this.cbx_ChonChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_ChonChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_ChonChucVu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbx_ChonChucVu.FormattingEnabled = true;
+            this.cbx_ChonChucVu.Items.AddRange(new object[] {
             "Học kì 1",
             "Học kì 2",
             "Học kì 3"});
-            this.cbx_TKChucVu.Location = new System.Drawing.Point(942, 27);
-            this.cbx_TKChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbx_TKChucVu.Name = "cbx_TKChucVu";
-            this.cbx_TKChucVu.Size = new System.Drawing.Size(176, 31);
-            this.cbx_TKChucVu.TabIndex = 24;
-            this.cbx_TKChucVu.Text = "-Chọn chức vụ-";
+            this.cbx_ChonChucVu.Location = new System.Drawing.Point(942, 27);
+            this.cbx_ChonChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_ChonChucVu.Name = "cbx_ChonChucVu";
+            this.cbx_ChonChucVu.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonChucVu.TabIndex = 24;
+            this.cbx_ChonChucVu.Text = "-Chọn chức vụ-";
             // 
             // ln_chonhocki
             // 
@@ -372,51 +408,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Chức vụ";
             // 
-            // pbx_TimKiem
-            // 
-            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
-            this.pbx_TimKiem.Location = new System.Drawing.Point(343, 65);
-            this.pbx_TimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pbx_TimKiem.Name = "pbx_TimKiem";
-            this.pbx_TimKiem.Size = new System.Drawing.Size(26, 30);
-            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_TimKiem.TabIndex = 36;
-            this.pbx_TimKiem.TabStop = false;
-            // 
-            // dtgrv_TK
-            // 
-            this.dtgrv_TK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TK.HeaderText = "Tài Khoản ";
-            this.dtgrv_TK.MinimumWidth = 10;
-            this.dtgrv_TK.Name = "dtgrv_TK";
-            // 
-            // dtgrv_MatKhau
-            // 
-            this.dtgrv_MatKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_MatKhau.DataPropertyName = "mat_khau";
-            this.dtgrv_MatKhau.HeaderText = "Mật Khẩu";
-            this.dtgrv_MatKhau.MinimumWidth = 10;
-            this.dtgrv_MatKhau.Name = "dtgrv_MatKhau";
-            // 
-            // dtgrv_ChucVu
-            // 
-            this.dtgrv_ChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_ChucVu.DataPropertyName = "idPer";
-            this.dtgrv_ChucVu.HeaderText = "Chức Vụ";
-            this.dtgrv_ChucVu.MinimumWidth = 10;
-            this.dtgrv_ChucVu.Name = "dtgrv_ChucVu";
-            this.dtgrv_ChucVu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // dtgrv_TrangThai
-            // 
-            this.dtgrv_TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TrangThai.DataPropertyName = "status";
-            this.dtgrv_TrangThai.HeaderText = "Trạng Thái";
-            this.dtgrv_TrangThai.MinimumWidth = 10;
-            this.dtgrv_TrangThai.Name = "dtgrv_TrangThai";
-            this.dtgrv_TrangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
             // FormThemTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -434,9 +425,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_TaiKhoan)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.gbx_NhapChiTietDiem.ResumeLayout(false);
             this.gbx_NhapChiTietDiem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,10 +443,10 @@
         private System.Windows.Forms.Button btn_Luu;
         private System.Windows.Forms.Button btn_Thêm;
         private System.Windows.Forms.Button btn_XuatExcel;
-        private System.Windows.Forms.ComboBox cbx_TKMonHoc;
+        private System.Windows.Forms.ComboBox cbx_ChonMonHoc;
         private System.Windows.Forms.TextBox tbx_TimKiem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbx_TKChucVu;
+        private System.Windows.Forms.ComboBox cbx_ChonChucVu;
         private System.Windows.Forms.Label ln_chonhocki;
         private System.Windows.Forms.GroupBox gbx_NhapChiTietDiem;
         private System.Windows.Forms.TextBox tbx_MatKhau;

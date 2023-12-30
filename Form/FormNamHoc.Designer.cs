@@ -41,11 +41,11 @@
             this.gbx_NhapChiTietDiem = new System.Windows.Forms.GroupBox();
             this.tbx_GhiChu = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbx_NamHoc = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.cbx_MaHK = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtgrv_BangDiemSV = new System.Windows.Forms.DataGridView();
+            this.dtgrv_NamHocSV = new System.Windows.Forms.DataGridView();
             this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_HocKi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_NamHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
             this.gbx_NhapChiTietDiem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemSV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_NamHocSV)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -194,7 +194,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_GhiChu);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label12);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox9);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_NamHoc);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label13);
             this.gbx_NhapChiTietDiem.Controls.Add(this.cbx_MaHK);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label3);
@@ -223,13 +223,13 @@
             this.label12.TabIndex = 19;
             this.label12.Text = "Ghi chú";
             // 
-            // textBox9
+            // tbx_NamHoc
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(433, 33);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(131, 30);
-            this.textBox9.TabIndex = 18;
+            this.tbx_NamHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_NamHoc.Location = new System.Drawing.Point(433, 33);
+            this.tbx_NamHoc.Name = "tbx_NamHoc";
+            this.tbx_NamHoc.Size = new System.Drawing.Size(131, 30);
+            this.tbx_NamHoc.TabIndex = 18;
             // 
             // label13
             // 
@@ -258,24 +258,24 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Học kì";
             // 
-            // dtgrv_BangDiemSV
+            // dtgrv_NamHocSV
             // 
-            this.dtgrv_BangDiemSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtgrv_NamHocSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgrv_BangDiemSV.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dtgrv_BangDiemSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrv_BangDiemSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgrv_NamHocSV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgrv_NamHocSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrv_NamHocSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dtgrv_Stt,
             this.dtgrv_HocKi,
             this.dtgrv_NamHoc,
             this.dtgrv_GhiChu});
-            this.dtgrv_BangDiemSV.Location = new System.Drawing.Point(12, 302);
-            this.dtgrv_BangDiemSV.Name = "dtgrv_BangDiemSV";
-            this.dtgrv_BangDiemSV.RowHeadersWidth = 51;
-            this.dtgrv_BangDiemSV.RowTemplate.Height = 24;
-            this.dtgrv_BangDiemSV.Size = new System.Drawing.Size(774, 210);
-            this.dtgrv_BangDiemSV.TabIndex = 21;
+            this.dtgrv_NamHocSV.Location = new System.Drawing.Point(12, 302);
+            this.dtgrv_NamHocSV.Name = "dtgrv_NamHocSV";
+            this.dtgrv_NamHocSV.RowHeadersWidth = 51;
+            this.dtgrv_NamHocSV.RowTemplate.Height = 24;
+            this.dtgrv_NamHocSV.Size = new System.Drawing.Size(774, 210);
+            this.dtgrv_NamHocSV.TabIndex = 21;
             // 
             // dtgrv_Stt
             // 
@@ -312,7 +312,7 @@
             this.ClientSize = new System.Drawing.Size(798, 524);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbx_NhapChiTietDiem);
-            this.Controls.Add(this.dtgrv_BangDiemSV);
+            this.Controls.Add(this.dtgrv_NamHocSV);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -324,7 +324,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.gbx_NhapChiTietDiem.ResumeLayout(false);
             this.gbx_NhapChiTietDiem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemSV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_NamHocSV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -343,11 +343,11 @@
         private System.Windows.Forms.GroupBox gbx_NhapChiTietDiem;
         private System.Windows.Forms.TextBox tbx_GhiChu;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbx_NamHoc;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cbx_MaHK;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dtgrv_BangDiemSV;
+        private System.Windows.Forms.DataGridView dtgrv_NamHocSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_Stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_HocKi;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_NamHoc;

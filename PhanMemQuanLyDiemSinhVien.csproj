@@ -53,6 +53,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
+    <Compile Include="Form\FormThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormThongTin.Designer.cs">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormHocLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormHocLai.Designer.cs">
+      <DependentUpon>FormHocLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormThiLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormThiLai.Designer.cs">
+      <DependentUpon>FormThiLai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormDiemTBHT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +152,15 @@
     <Compile Include="Function\cls_Function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\FormThongTin.resx">
+      <DependentUpon>FormThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormHocLai.resx">
+      <DependentUpon>FormHocLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormThiLai.resx">
+      <DependentUpon>FormThiLai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormDiemTBHT.resx">
       <DependentUpon>FormDiemTBHT.cs</DependentUpon>
     </EmbeddedResource>

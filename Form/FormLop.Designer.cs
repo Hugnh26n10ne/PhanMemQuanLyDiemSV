@@ -45,7 +45,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tbx_MaLopHoc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbx_NganhHoc = new System.Windows.Forms.ComboBox();
+            this.cbx_ChonNganhHoc = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dtgrv_BangLopHoc = new System.Windows.Forms.DataGridView();
             this.dtgrv_MaLopHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -205,7 +205,7 @@
             this.gbx_NhapChiTietDiem.Controls.Add(this.label5);
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_MaLopHoc);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label4);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.cbx_NganhHoc);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.cbx_ChonNganhHoc);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label2);
             this.gbx_NhapChiTietDiem.Location = new System.Drawing.Point(12, 13);
             this.gbx_NhapChiTietDiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -271,15 +271,15 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Mã lớp học";
             // 
-            // cbx_NganhHoc
+            // cbx_ChonNganhHoc
             // 
-            this.cbx_NganhHoc.FormattingEnabled = true;
-            this.cbx_NganhHoc.Location = new System.Drawing.Point(596, 33);
-            this.cbx_NganhHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbx_NganhHoc.Name = "cbx_NganhHoc";
-            this.cbx_NganhHoc.Size = new System.Drawing.Size(208, 31);
-            this.cbx_NganhHoc.TabIndex = 1;
-            this.cbx_NganhHoc.Text = "-Chọn ngành học -";
+            this.cbx_ChonNganhHoc.FormattingEnabled = true;
+            this.cbx_ChonNganhHoc.Location = new System.Drawing.Point(596, 33);
+            this.cbx_ChonNganhHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_ChonNganhHoc.Name = "cbx_ChonNganhHoc";
+            this.cbx_ChonNganhHoc.Size = new System.Drawing.Size(208, 31);
+            this.cbx_ChonNganhHoc.TabIndex = 1;
+            this.cbx_ChonNganhHoc.Text = "-Chọn ngành học -";
             // 
             // label2
             // 
@@ -383,7 +383,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbx_MaLopHoc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbx_NganhHoc;
+        private System.Windows.Forms.ComboBox cbx_ChonNganhHoc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtgrv_BangLopHoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_MaLopHoc;
