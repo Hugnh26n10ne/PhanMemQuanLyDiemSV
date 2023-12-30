@@ -38,22 +38,35 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMonHoc));
             this.dtgrv_MonHoc = new System.Windows.Forms.DataGridView();
+            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_SoTinChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_SoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TongKetHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_DiemChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.btn_NhapExcel = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_CapNhat = new System.Windows.Forms.Button();
             this.btn_Luu = new System.Windows.Forms.Button();
             this.btn_Thêm = new System.Windows.Forms.Button();
+            this.btn_XuatExcel = new System.Windows.Forms.Button();
+            this.cbx_TKMonHoc = new System.Windows.Forms.ComboBox();
+            this.tbx_TimKiem = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cbx_TKChucVu = new System.Windows.Forms.ComboBox();
             this.ln_chonhocki = new System.Windows.Forms.Label();
             this.gbx_NhapChiTietDiem = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbx_ThiKT = new System.Windows.Forms.TextBox();
+            this.tbx_KTGK = new System.Windows.Forms.TextBox();
+            this.tbx_DiemTL = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbx_DiemTH = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tbx_ChuyenCan = new System.Windows.Forms.TextBox();
             this.tbx_DanhGia = new System.Windows.Forms.TextBox();
@@ -69,23 +82,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_MaSV = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbx_TimKiem = new System.Windows.Forms.TextBox();
-            this.cbx_TKMonHoc = new System.Windows.Forms.ComboBox();
-            this.btn_XuatExcel = new System.Windows.Forms.Button();
-            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
-            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_SoTinChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_SoTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TenGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TongKetHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_DiemChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_MonHoc)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.gbx_NhapChiTietDiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
+            this.gbx_NhapChiTietDiem.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgrv_MonHoc
@@ -113,6 +113,86 @@
             this.dtgrv_MonHoc.Size = new System.Drawing.Size(1184, 645);
             this.dtgrv_MonHoc.TabIndex = 0;
             // 
+            // dtgrv_Stt
+            // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_Stt.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgrv_Stt.HeaderText = "STT";
+            this.dtgrv_Stt.MinimumWidth = 6;
+            this.dtgrv_Stt.Name = "dtgrv_Stt";
+            this.dtgrv_Stt.ReadOnly = true;
+            this.dtgrv_Stt.Width = 50;
+            // 
+            // dtgrv_MaMon
+            // 
+            this.dtgrv_MaMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_MaMon.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtgrv_MaMon.HeaderText = "Mã môn";
+            this.dtgrv_MaMon.MinimumWidth = 6;
+            this.dtgrv_MaMon.Name = "dtgrv_MaMon";
+            this.dtgrv_MaMon.ReadOnly = true;
+            // 
+            // dtgrv_TenMon
+            // 
+            this.dtgrv_TenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_TenMon.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dtgrv_TenMon.HeaderText = "Tên môn";
+            this.dtgrv_TenMon.MinimumWidth = 6;
+            this.dtgrv_TenMon.Name = "dtgrv_TenMon";
+            this.dtgrv_TenMon.ReadOnly = true;
+            // 
+            // dtgrv_SoTinChi
+            // 
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_SoTinChi.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dtgrv_SoTinChi.HeaderText = "Số TC";
+            this.dtgrv_SoTinChi.MinimumWidth = 6;
+            this.dtgrv_SoTinChi.Name = "dtgrv_SoTinChi";
+            this.dtgrv_SoTinChi.ReadOnly = true;
+            this.dtgrv_SoTinChi.Width = 50;
+            // 
+            // dtgrv_SoTiet
+            // 
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_SoTiet.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dtgrv_SoTiet.HeaderText = "Số tiết";
+            this.dtgrv_SoTiet.MinimumWidth = 6;
+            this.dtgrv_SoTiet.Name = "dtgrv_SoTiet";
+            this.dtgrv_SoTiet.ReadOnly = true;
+            this.dtgrv_SoTiet.Width = 50;
+            // 
+            // dtgrv_TenGV
+            // 
+            this.dtgrv_TenGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_TenGV.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dtgrv_TenGV.HeaderText = "Tên GV";
+            this.dtgrv_TenGV.MinimumWidth = 6;
+            this.dtgrv_TenGV.Name = "dtgrv_TenGV";
+            this.dtgrv_TenGV.ReadOnly = true;
+            // 
+            // dtgrv_TongKetHP
+            // 
+            this.dtgrv_TongKetHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_TongKetHP.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dtgrv_TongKetHP.HeaderText = "Tổng kết HP";
+            this.dtgrv_TongKetHP.MinimumWidth = 6;
+            this.dtgrv_TongKetHP.Name = "dtgrv_TongKetHP";
+            this.dtgrv_TongKetHP.ReadOnly = true;
+            // 
+            // dtgrv_DiemChu
+            // 
+            this.dtgrv_DiemChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtgrv_DiemChu.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dtgrv_DiemChu.HeaderText = "Điểm chữ";
+            this.dtgrv_DiemChu.MinimumWidth = 6;
+            this.dtgrv_DiemChu.Name = "dtgrv_DiemChu";
+            this.dtgrv_DiemChu.ReadOnly = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -136,6 +216,18 @@
             this.groupBox1.Size = new System.Drawing.Size(1184, 123);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
+            // 
+            // pbx_TimKiem
+            // 
+            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.pbx_TimKiem.Location = new System.Drawing.Point(341, 72);
+            this.pbx_TimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pbx_TimKiem.Name = "pbx_TimKiem";
+            this.pbx_TimKiem.Size = new System.Drawing.Size(26, 30);
+            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_TimKiem.TabIndex = 36;
+            this.pbx_TimKiem.TabStop = false;
             // 
             // btn_NhapExcel
             // 
@@ -216,6 +308,61 @@
             this.btn_Thêm.TabIndex = 31;
             this.btn_Thêm.Text = "Thêm";
             this.btn_Thêm.UseVisualStyleBackColor = false;
+            this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
+            // 
+            // btn_XuatExcel
+            // 
+            this.btn_XuatExcel.AutoSize = true;
+            this.btn_XuatExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_XuatExcel.FlatAppearance.BorderSize = 0;
+            this.btn_XuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XuatExcel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_XuatExcel.ForeColor = System.Drawing.Color.White;
+            this.btn_XuatExcel.Location = new System.Drawing.Point(663, 69);
+            this.btn_XuatExcel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_XuatExcel.Name = "btn_XuatExcel";
+            this.btn_XuatExcel.Size = new System.Drawing.Size(159, 37);
+            this.btn_XuatExcel.TabIndex = 30;
+            this.btn_XuatExcel.Text = "Xuất Excel";
+            this.btn_XuatExcel.UseVisualStyleBackColor = false;
+            // 
+            // cbx_TKMonHoc
+            // 
+            this.cbx_TKMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbx_TKMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbx_TKMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_TKMonHoc.FormattingEnabled = true;
+            this.cbx_TKMonHoc.Items.AddRange(new object[] {
+            "Toán ",
+            "Lý ",
+            "Hóa ",
+            "Lập trình C++"});
+            this.cbx_TKMonHoc.Location = new System.Drawing.Point(997, 72);
+            this.cbx_TKMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_TKMonHoc.Name = "cbx_TKMonHoc";
+            this.cbx_TKMonHoc.Size = new System.Drawing.Size(176, 31);
+            this.cbx_TKMonHoc.TabIndex = 28;
+            this.cbx_TKMonHoc.Text = "-Chọn tên môn-";
+            // 
+            // tbx_TimKiem
+            // 
+            this.tbx_TimKiem.Location = new System.Drawing.Point(18, 72);
+            this.tbx_TimKiem.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.tbx_TimKiem.Name = "tbx_TimKiem";
+            this.tbx_TimKiem.Size = new System.Drawing.Size(304, 30);
+            this.tbx_TimKiem.TabIndex = 26;
+            this.tbx_TimKiem.Text = "(Nhập mã môn)";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(873, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Tên môn";
             // 
             // cbx_TKChucVu
             // 
@@ -249,13 +396,13 @@
             // 
             this.gbx_NhapChiTietDiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox6);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox7);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox8);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_ThiKT);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_KTGK);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_DiemTL);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label10);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label11);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label12);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox9);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_DiemTH);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label13);
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_ChuyenCan);
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_DanhGia);
@@ -278,29 +425,29 @@
             this.gbx_NhapChiTietDiem.TabStop = false;
             this.gbx_NhapChiTietDiem.Text = "Chi Tiết Môn Học";
             // 
-            // textBox6
+            // tbx_ThiKT
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(920, 137);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(96, 30);
-            this.textBox6.TabIndex = 25;
+            this.tbx_ThiKT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_ThiKT.Location = new System.Drawing.Point(920, 137);
+            this.tbx_ThiKT.Name = "tbx_ThiKT";
+            this.tbx_ThiKT.Size = new System.Drawing.Size(96, 30);
+            this.tbx_ThiKT.TabIndex = 25;
             // 
-            // textBox7
+            // tbx_KTGK
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(663, 133);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(96, 30);
-            this.textBox7.TabIndex = 24;
+            this.tbx_KTGK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_KTGK.Location = new System.Drawing.Point(663, 133);
+            this.tbx_KTGK.Name = "tbx_KTGK";
+            this.tbx_KTGK.Size = new System.Drawing.Size(96, 30);
+            this.tbx_KTGK.TabIndex = 24;
             // 
-            // textBox8
+            // tbx_DiemTL
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(420, 137);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(96, 30);
-            this.textBox8.TabIndex = 23;
+            this.tbx_DiemTL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_DiemTL.Location = new System.Drawing.Point(420, 137);
+            this.tbx_DiemTL.Name = "tbx_DiemTL";
+            this.tbx_DiemTL.Size = new System.Drawing.Size(96, 30);
+            this.tbx_DiemTL.TabIndex = 23;
             // 
             // label10
             // 
@@ -329,13 +476,13 @@
             this.label12.TabIndex = 19;
             this.label12.Text = "Điểm thảo luận";
             // 
-            // textBox9
+            // tbx_DiemTH
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(153, 137);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(96, 30);
-            this.textBox9.TabIndex = 18;
+            this.tbx_DiemTH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_DiemTH.Location = new System.Drawing.Point(153, 137);
+            this.tbx_DiemTH.Name = "tbx_DiemTH";
+            this.tbx_DiemTH.Size = new System.Drawing.Size(96, 30);
+            this.tbx_DiemTH.TabIndex = 18;
             // 
             // label13
             // 
@@ -467,152 +614,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Sinh viên";
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(873, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 23);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Tên môn";
-            // 
-            // tbx_TimKiem
-            // 
-            this.tbx_TimKiem.Location = new System.Drawing.Point(18, 72);
-            this.tbx_TimKiem.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
-            this.tbx_TimKiem.Name = "tbx_TimKiem";
-            this.tbx_TimKiem.Size = new System.Drawing.Size(304, 30);
-            this.tbx_TimKiem.TabIndex = 26;
-            this.tbx_TimKiem.Text = "(Nhập mã môn)";
-            // 
-            // cbx_TKMonHoc
-            // 
-            this.cbx_TKMonHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbx_TKMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbx_TKMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_TKMonHoc.FormattingEnabled = true;
-            this.cbx_TKMonHoc.Items.AddRange(new object[] {
-            "Toán ",
-            "Lý ",
-            "Hóa ",
-            "Lập trình C++"});
-            this.cbx_TKMonHoc.Location = new System.Drawing.Point(997, 72);
-            this.cbx_TKMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cbx_TKMonHoc.Name = "cbx_TKMonHoc";
-            this.cbx_TKMonHoc.Size = new System.Drawing.Size(176, 31);
-            this.cbx_TKMonHoc.TabIndex = 28;
-            this.cbx_TKMonHoc.Text = "-Chọn tên môn-";
-            // 
-            // btn_XuatExcel
-            // 
-            this.btn_XuatExcel.AutoSize = true;
-            this.btn_XuatExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_XuatExcel.FlatAppearance.BorderSize = 0;
-            this.btn_XuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XuatExcel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_XuatExcel.ForeColor = System.Drawing.Color.White;
-            this.btn_XuatExcel.Location = new System.Drawing.Point(663, 69);
-            this.btn_XuatExcel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_XuatExcel.Name = "btn_XuatExcel";
-            this.btn_XuatExcel.Size = new System.Drawing.Size(159, 37);
-            this.btn_XuatExcel.TabIndex = 30;
-            this.btn_XuatExcel.Text = "Xuất Excel";
-            this.btn_XuatExcel.UseVisualStyleBackColor = false;
-            // 
-            // pbx_TimKiem
-            // 
-            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
-            this.pbx_TimKiem.Location = new System.Drawing.Point(341, 72);
-            this.pbx_TimKiem.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pbx_TimKiem.Name = "pbx_TimKiem";
-            this.pbx_TimKiem.Size = new System.Drawing.Size(26, 30);
-            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_TimKiem.TabIndex = 36;
-            this.pbx_TimKiem.TabStop = false;
-            // 
-            // dtgrv_Stt
-            // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_Stt.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dtgrv_Stt.HeaderText = "STT";
-            this.dtgrv_Stt.MinimumWidth = 6;
-            this.dtgrv_Stt.Name = "dtgrv_Stt";
-            this.dtgrv_Stt.ReadOnly = true;
-            this.dtgrv_Stt.Width = 50;
-            // 
-            // dtgrv_MaMon
-            // 
-            this.dtgrv_MaMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_MaMon.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtgrv_MaMon.HeaderText = "Mã môn";
-            this.dtgrv_MaMon.MinimumWidth = 6;
-            this.dtgrv_MaMon.Name = "dtgrv_MaMon";
-            this.dtgrv_MaMon.ReadOnly = true;
-            // 
-            // dtgrv_TenMon
-            // 
-            this.dtgrv_TenMon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_TenMon.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dtgrv_TenMon.HeaderText = "Tên môn";
-            this.dtgrv_TenMon.MinimumWidth = 6;
-            this.dtgrv_TenMon.Name = "dtgrv_TenMon";
-            this.dtgrv_TenMon.ReadOnly = true;
-            // 
-            // dtgrv_SoTinChi
-            // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_SoTinChi.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dtgrv_SoTinChi.HeaderText = "Số TC";
-            this.dtgrv_SoTinChi.MinimumWidth = 6;
-            this.dtgrv_SoTinChi.Name = "dtgrv_SoTinChi";
-            this.dtgrv_SoTinChi.ReadOnly = true;
-            this.dtgrv_SoTinChi.Width = 50;
-            // 
-            // dtgrv_SoTiet
-            // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_SoTiet.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dtgrv_SoTiet.HeaderText = "Số tiết";
-            this.dtgrv_SoTiet.MinimumWidth = 6;
-            this.dtgrv_SoTiet.Name = "dtgrv_SoTiet";
-            this.dtgrv_SoTiet.ReadOnly = true;
-            this.dtgrv_SoTiet.Width = 50;
-            // 
-            // dtgrv_TenGV
-            // 
-            this.dtgrv_TenGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_TenGV.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dtgrv_TenGV.HeaderText = "Tên GV";
-            this.dtgrv_TenGV.MinimumWidth = 6;
-            this.dtgrv_TenGV.Name = "dtgrv_TenGV";
-            this.dtgrv_TenGV.ReadOnly = true;
-            // 
-            // dtgrv_TongKetHP
-            // 
-            this.dtgrv_TongKetHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_TongKetHP.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dtgrv_TongKetHP.HeaderText = "Tổng kết HP";
-            this.dtgrv_TongKetHP.MinimumWidth = 6;
-            this.dtgrv_TongKetHP.Name = "dtgrv_TongKetHP";
-            this.dtgrv_TongKetHP.ReadOnly = true;
-            // 
-            // dtgrv_DiemChu
-            // 
-            this.dtgrv_DiemChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtgrv_DiemChu.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dtgrv_DiemChu.HeaderText = "Điểm chữ";
-            this.dtgrv_DiemChu.MinimumWidth = 6;
-            this.dtgrv_DiemChu.Name = "dtgrv_DiemChu";
-            this.dtgrv_DiemChu.ReadOnly = true;
-            // 
             // FormMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -631,9 +632,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_MonHoc)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.gbx_NhapChiTietDiem.ResumeLayout(false);
             this.gbx_NhapChiTietDiem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -650,13 +651,13 @@
         private System.Windows.Forms.ComboBox cbx_TKChucVu;
         private System.Windows.Forms.Label ln_chonhocki;
         private System.Windows.Forms.GroupBox gbx_NhapChiTietDiem;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbx_ThiKT;
+        private System.Windows.Forms.TextBox tbx_KTGK;
+        private System.Windows.Forms.TextBox tbx_DiemTL;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbx_DiemTH;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tbx_ChuyenCan;
         private System.Windows.Forms.TextBox tbx_DanhGia;
