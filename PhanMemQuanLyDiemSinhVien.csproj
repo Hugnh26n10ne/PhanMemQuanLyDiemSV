@@ -53,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\cls_SinhVien.cs" />
+    <Compile Include="Form\FormHocBong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormHocBong.Designer.cs">
+      <DependentUpon>FormHocBong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FormThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     <Compile Include="Function\cls_Function.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\FormHocBong.resx">
+      <DependentUpon>FormHocBong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FormThongTin.resx">
       <DependentUpon>FormThongTin.cs</DependentUpon>
     </EmbeddedResource>
