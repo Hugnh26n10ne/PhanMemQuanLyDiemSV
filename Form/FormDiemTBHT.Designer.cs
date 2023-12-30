@@ -32,6 +32,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbx_NganhHoc = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.btn_NhapExcel = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_CapNhat = new System.Windows.Forms.Button();
@@ -66,7 +67,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_MaSV = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtgrv_BangDiemSV = new System.Windows.Forms.DataGridView();
+            this.dtgrv_BangDiemTBHTSV = new System.Windows.Forms.DataGridView();
             this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_MaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_MaHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,11 +83,10 @@
             this.dtgrv_ThiKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_TongKetHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgrv_DiemChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            this.gbx_NhapChiTietDiem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemSV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
+            this.gbx_NhapChiTietDiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemTBHTSV)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -140,6 +140,17 @@
             this.label9.Size = new System.Drawing.Size(62, 23);
             this.label9.TabIndex = 37;
             this.label9.Text = "Ngành";
+            // 
+            // pbx_TimKiem
+            // 
+            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
+            this.pbx_TimKiem.Location = new System.Drawing.Point(305, 78);
+            this.pbx_TimKiem.Name = "pbx_TimKiem";
+            this.pbx_TimKiem.Size = new System.Drawing.Size(31, 26);
+            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbx_TimKiem.TabIndex = 36;
+            this.pbx_TimKiem.TabStop = false;
             // 
             // btn_NhapExcel
             // 
@@ -521,14 +532,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Sinh viên";
             // 
-            // dtgrv_BangDiemSV
+            // dtgrv_BangDiemTBHTSV
             // 
-            this.dtgrv_BangDiemSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtgrv_BangDiemTBHTSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgrv_BangDiemSV.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dtgrv_BangDiemSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrv_BangDiemSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgrv_BangDiemTBHTSV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgrv_BangDiemTBHTSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrv_BangDiemTBHTSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dtgrv_Stt,
             this.dtgrv_MaSV,
             this.dtgrv_MaHP,
@@ -544,12 +555,12 @@
             this.dtgrv_ThiKetThuc,
             this.dtgrv_TongKetHP,
             this.dtgrv_DiemChu});
-            this.dtgrv_BangDiemSV.Location = new System.Drawing.Point(13, 347);
-            this.dtgrv_BangDiemSV.Name = "dtgrv_BangDiemSV";
-            this.dtgrv_BangDiemSV.RowHeadersWidth = 51;
-            this.dtgrv_BangDiemSV.RowTemplate.Height = 24;
-            this.dtgrv_BangDiemSV.Size = new System.Drawing.Size(1071, 495);
-            this.dtgrv_BangDiemSV.TabIndex = 21;
+            this.dtgrv_BangDiemTBHTSV.Location = new System.Drawing.Point(13, 347);
+            this.dtgrv_BangDiemTBHTSV.Name = "dtgrv_BangDiemTBHTSV";
+            this.dtgrv_BangDiemTBHTSV.RowHeadersWidth = 51;
+            this.dtgrv_BangDiemTBHTSV.RowTemplate.Height = 24;
+            this.dtgrv_BangDiemTBHTSV.Size = new System.Drawing.Size(1071, 495);
+            this.dtgrv_BangDiemTBHTSV.TabIndex = 21;
             // 
             // dtgrv_Stt
             // 
@@ -668,17 +679,6 @@
             this.dtgrv_DiemChu.MinimumWidth = 6;
             this.dtgrv_DiemChu.Name = "dtgrv_DiemChu";
             // 
-            // pbx_TimKiem
-            // 
-            this.pbx_TimKiem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbx_TimKiem.Image = global::PhanMemQuanLyDiemSinhVien.Properties.Resources.search;
-            this.pbx_TimKiem.Location = new System.Drawing.Point(305, 78);
-            this.pbx_TimKiem.Name = "pbx_TimKiem";
-            this.pbx_TimKiem.Size = new System.Drawing.Size(31, 26);
-            this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbx_TimKiem.TabIndex = 36;
-            this.pbx_TimKiem.TabStop = false;
-            // 
             // FormDiemTBHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -686,7 +686,7 @@
             this.ClientSize = new System.Drawing.Size(1096, 854);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbx_NhapChiTietDiem);
-            this.Controls.Add(this.dtgrv_BangDiemSV);
+            this.Controls.Add(this.dtgrv_BangDiemTBHTSV);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -695,10 +695,10 @@
             this.Text = "Phần mềm quản lý điểm sinh viên";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
             this.gbx_NhapChiTietDiem.ResumeLayout(false);
             this.gbx_NhapChiTietDiem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemSV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemTBHTSV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -743,7 +743,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbx_MaSV;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dtgrv_BangDiemSV;
+        private System.Windows.Forms.DataGridView dtgrv_BangDiemTBHTSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_Stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_MaSV;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_MaHP;

@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgrv_BangLopHoc = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHocKi));
+            this.dtgrv_HocKi = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.btn_NhapExcel = new System.Windows.Forms.Button();
@@ -43,34 +44,29 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tbx_HK = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_HọcKi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangLopHoc)).BeginInit();
+            this.hoc_ki = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghi_chu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_HocKi)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
             this.gbx_NhapChiTietDiem.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgrv_BangLopHoc
+            // dtgrv_HocKi
             // 
-            this.dtgrv_BangLopHoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgrv_BangLopHoc.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dtgrv_BangLopHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgrv_BangLopHoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dtgrv_Stt,
-            this.dtgrv_HọcKi,
-            this.dtgrv_GhiChu});
-            this.dtgrv_BangLopHoc.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dtgrv_BangLopHoc.Location = new System.Drawing.Point(12, 259);
-            this.dtgrv_BangLopHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dtgrv_BangLopHoc.Name = "dtgrv_BangLopHoc";
-            this.dtgrv_BangLopHoc.RowHeadersWidth = 82;
-            this.dtgrv_BangLopHoc.RowTemplate.Height = 33;
-            this.dtgrv_BangLopHoc.Size = new System.Drawing.Size(865, 264);
-            this.dtgrv_BangLopHoc.TabIndex = 28;
+            this.dtgrv_HocKi.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgrv_HocKi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrv_HocKi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.hoc_ki,
+            this.ghi_chu});
+            this.dtgrv_HocKi.Location = new System.Drawing.Point(12, 259);
+            this.dtgrv_HocKi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dtgrv_HocKi.Name = "dtgrv_HocKi";
+            this.dtgrv_HocKi.RowHeadersWidth = 82;
+            this.dtgrv_HocKi.RowTemplate.Height = 33;
+            this.dtgrv_HocKi.Size = new System.Drawing.Size(865, 264);
+            this.dtgrv_HocKi.TabIndex = 28;
+            this.dtgrv_HocKi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrv_HocKi_CellClick);
             // 
             // groupBox1
             // 
@@ -103,6 +99,7 @@
             this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_TimKiem.TabIndex = 36;
             this.pbx_TimKiem.TabStop = false;
+            this.pbx_TimKiem.Click += new System.EventHandler(this.pbx_TimKiem_Click);
             // 
             // btn_NhapExcel
             // 
@@ -135,6 +132,7 @@
             this.btn_Xoa.TabIndex = 34;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_CapNhat
             // 
@@ -151,6 +149,7 @@
             this.btn_CapNhat.TabIndex = 33;
             this.btn_CapNhat.Text = "Cập nhật";
             this.btn_CapNhat.UseVisualStyleBackColor = false;
+            this.btn_CapNhat.Click += new System.EventHandler(this.btn_CapNhat_Click);
             // 
             // btn_Luu
             // 
@@ -183,6 +182,7 @@
             this.btn_Thêm.TabIndex = 31;
             this.btn_Thêm.Text = "Thêm";
             this.btn_Thêm.UseVisualStyleBackColor = false;
+            this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
             // 
             // btn_XuatExcel
             // 
@@ -263,41 +263,38 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Học kì";
             // 
-            // dtgrv_Stt
+            // hoc_ki
             // 
-            this.dtgrv_Stt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Stt.HeaderText = "STT";
-            this.dtgrv_Stt.MinimumWidth = 10;
-            this.dtgrv_Stt.Name = "dtgrv_Stt";
+            this.hoc_ki.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoc_ki.DataPropertyName = "hoc_ki";
+            this.hoc_ki.HeaderText = "Học kì";
+            this.hoc_ki.MinimumWidth = 10;
+            this.hoc_ki.Name = "hoc_ki";
             // 
-            // dtgrv_HọcKi
+            // ghi_chu
             // 
-            this.dtgrv_HọcKi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_HọcKi.HeaderText = "Học kì";
-            this.dtgrv_HọcKi.MinimumWidth = 10;
-            this.dtgrv_HọcKi.Name = "dtgrv_HọcKi";
-            // 
-            // dtgrv_GhiChu
-            // 
-            this.dtgrv_GhiChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_GhiChu.HeaderText = "Ghi Chú";
-            this.dtgrv_GhiChu.MinimumWidth = 10;
-            this.dtgrv_GhiChu.Name = "dtgrv_GhiChu";
-            this.dtgrv_GhiChu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ghi_chu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ghi_chu.DataPropertyName = "ghi_chu";
+            this.ghi_chu.HeaderText = "Ghi Chú";
+            this.ghi_chu.MinimumWidth = 10;
+            this.ghi_chu.Name = "ghi_chu";
+            this.ghi_chu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // FormHocKi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 536);
-            this.Controls.Add(this.dtgrv_BangLopHoc);
+            this.Controls.Add(this.dtgrv_HocKi);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbx_NhapChiTietDiem);
             this.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormHocKi";
-            this.Text = "FormHocKi";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangLopHoc)).EndInit();
+            this.Text = "Phần mềm quản lý điểm sinh viên";
+            this.Load += new System.EventHandler(this.FormHocKi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrv_HocKi)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();
@@ -309,7 +306,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgrv_BangLopHoc;
+        private System.Windows.Forms.DataGridView dtgrv_HocKi;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pbx_TimKiem;
         private System.Windows.Forms.Button btn_NhapExcel;
@@ -324,8 +321,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbx_HK;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_Stt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_HọcKi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtgrv_GhiChu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoc_ki;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ghi_chu;
     }
 }
