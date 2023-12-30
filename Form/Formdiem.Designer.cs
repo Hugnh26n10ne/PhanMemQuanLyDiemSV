@@ -30,14 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDiem));
             this.dtgrv_BangDiemSV = new System.Windows.Forms.DataGridView();
+            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_MaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_MaHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TenHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_SoTinChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_LanHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_LanThi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_DanhGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_ChuyenCan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_DiemTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_DiemTL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_KTGiuaKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_ThiKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TongKetHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_DiemChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbx_NhapChiTietDiem = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbx_ThiKT = new System.Windows.Forms.TextBox();
+            this.tbx_KTGiuaKy = new System.Windows.Forms.TextBox();
+            this.tbx_DiemTL = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbx_DiemTH = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.tbx_ChuyenCan = new System.Windows.Forms.TextBox();
             this.tbx_DanhGia = new System.Windows.Forms.TextBox();
@@ -68,21 +83,6 @@
             this.cbx_Hocky = new System.Windows.Forms.ComboBox();
             this.ln_chonhocki = new System.Windows.Forms.Label();
             this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
-            this.dtgrv_Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_MaSV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_MaHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TenHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_SoTinChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_LanHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_LanThi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_DanhGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_ChuyenCan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_DiemTH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_DiemTL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_KTGiuaKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_ThiKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TongKetHP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_DiemChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_BangDiemSV)).BeginInit();
             this.gbx_NhapChiTietDiem.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -119,17 +119,134 @@
             this.dtgrv_BangDiemSV.Size = new System.Drawing.Size(1025, 373);
             this.dtgrv_BangDiemSV.TabIndex = 18;
             // 
+            // dtgrv_Stt
+            // 
+            this.dtgrv_Stt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_Stt.HeaderText = "STT";
+            this.dtgrv_Stt.MinimumWidth = 6;
+            this.dtgrv_Stt.Name = "dtgrv_Stt";
+            // 
+            // dtgrv_MaSV
+            // 
+            this.dtgrv_MaSV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_MaSV.DataPropertyName = "ma_sv";
+            this.dtgrv_MaSV.HeaderText = "Mã sinh viên";
+            this.dtgrv_MaSV.MinimumWidth = 6;
+            this.dtgrv_MaSV.Name = "dtgrv_MaSV";
+            // 
+            // dtgrv_MaHP
+            // 
+            this.dtgrv_MaHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_MaHP.DataPropertyName = "ma_mh";
+            this.dtgrv_MaHP.HeaderText = "Mã học phần";
+            this.dtgrv_MaHP.MinimumWidth = 6;
+            this.dtgrv_MaHP.Name = "dtgrv_MaHP";
+            // 
+            // dtgrv_TenHP
+            // 
+            this.dtgrv_TenHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TenHP.DataPropertyName = "ten_mh";
+            this.dtgrv_TenHP.HeaderText = "Tên học phần";
+            this.dtgrv_TenHP.MinimumWidth = 6;
+            this.dtgrv_TenHP.Name = "dtgrv_TenHP";
+            // 
+            // dtgrv_SoTinChi
+            // 
+            this.dtgrv_SoTinChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_SoTinChi.DataPropertyName = "so_tin_chi";
+            this.dtgrv_SoTinChi.HeaderText = "Số tín chỉ";
+            this.dtgrv_SoTinChi.MinimumWidth = 6;
+            this.dtgrv_SoTinChi.Name = "dtgrv_SoTinChi";
+            // 
+            // dtgrv_LanHoc
+            // 
+            this.dtgrv_LanHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_LanHoc.DataPropertyName = "lan_hoc";
+            this.dtgrv_LanHoc.HeaderText = "Lần học";
+            this.dtgrv_LanHoc.MinimumWidth = 6;
+            this.dtgrv_LanHoc.Name = "dtgrv_LanHoc";
+            // 
+            // dtgrv_LanThi
+            // 
+            this.dtgrv_LanThi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_LanThi.DataPropertyName = "lan_thi";
+            this.dtgrv_LanThi.HeaderText = "Lần thi";
+            this.dtgrv_LanThi.MinimumWidth = 6;
+            this.dtgrv_LanThi.Name = "dtgrv_LanThi";
+            // 
+            // dtgrv_DanhGia
+            // 
+            this.dtgrv_DanhGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_DanhGia.DataPropertyName = "danh_gia";
+            this.dtgrv_DanhGia.HeaderText = "Đánh giá";
+            this.dtgrv_DanhGia.MinimumWidth = 6;
+            this.dtgrv_DanhGia.Name = "dtgrv_DanhGia";
+            // 
+            // dtgrv_ChuyenCan
+            // 
+            this.dtgrv_ChuyenCan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_ChuyenCan.DataPropertyName = "chuyen_can";
+            this.dtgrv_ChuyenCan.HeaderText = "Chuyên cần";
+            this.dtgrv_ChuyenCan.MinimumWidth = 6;
+            this.dtgrv_ChuyenCan.Name = "dtgrv_ChuyenCan";
+            // 
+            // dtgrv_DiemTH
+            // 
+            this.dtgrv_DiemTH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_DiemTH.HeaderText = "Điểm TH";
+            this.dtgrv_DiemTH.MinimumWidth = 6;
+            this.dtgrv_DiemTH.Name = "dtgrv_DiemTH";
+            // 
+            // dtgrv_DiemTL
+            // 
+            this.dtgrv_DiemTL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_DiemTL.HeaderText = "Điểm TL";
+            this.dtgrv_DiemTL.MinimumWidth = 6;
+            this.dtgrv_DiemTL.Name = "dtgrv_DiemTL";
+            // 
+            // dtgrv_KTGiuaKy
+            // 
+            this.dtgrv_KTGiuaKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_KTGiuaKy.DataPropertyName = "kiem_tra_gk";
+            this.dtgrv_KTGiuaKy.HeaderText = "KT giữa kì";
+            this.dtgrv_KTGiuaKy.MinimumWidth = 6;
+            this.dtgrv_KTGiuaKy.Name = "dtgrv_KTGiuaKy";
+            // 
+            // dtgrv_ThiKetThuc
+            // 
+            this.dtgrv_ThiKetThuc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_ThiKetThuc.DataPropertyName = "thi_ket_thuc";
+            this.dtgrv_ThiKetThuc.HeaderText = "Thi kết thúc";
+            this.dtgrv_ThiKetThuc.MinimumWidth = 6;
+            this.dtgrv_ThiKetThuc.Name = "dtgrv_ThiKetThuc";
+            // 
+            // dtgrv_TongKetHP
+            // 
+            this.dtgrv_TongKetHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TongKetHP.DataPropertyName = "tong_ket_hp";
+            this.dtgrv_TongKetHP.HeaderText = "Tổng kết HP";
+            this.dtgrv_TongKetHP.MinimumWidth = 6;
+            this.dtgrv_TongKetHP.Name = "dtgrv_TongKetHP";
+            // 
+            // dtgrv_DiemChu
+            // 
+            this.dtgrv_DiemChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_DiemChu.DataPropertyName = "diem_chu";
+            this.dtgrv_DiemChu.HeaderText = "Điểm chữ";
+            this.dtgrv_DiemChu.MinimumWidth = 6;
+            this.dtgrv_DiemChu.Name = "dtgrv_DiemChu";
+            // 
             // gbx_NhapChiTietDiem
             // 
             this.gbx_NhapChiTietDiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox6);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox7);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox8);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_ThiKT);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_KTGiuaKy);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_DiemTL);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label10);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label11);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label12);
-            this.gbx_NhapChiTietDiem.Controls.Add(this.textBox9);
+            this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_DiemTH);
             this.gbx_NhapChiTietDiem.Controls.Add(this.label13);
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_ChuyenCan);
             this.gbx_NhapChiTietDiem.Controls.Add(this.tbx_DanhGia);
@@ -152,29 +269,29 @@
             this.gbx_NhapChiTietDiem.TabStop = false;
             this.gbx_NhapChiTietDiem.Text = "Chi Tiết Điểm";
             // 
-            // textBox6
+            // tbx_ThiKT
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(920, 137);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(96, 30);
-            this.textBox6.TabIndex = 25;
+            this.tbx_ThiKT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_ThiKT.Location = new System.Drawing.Point(920, 137);
+            this.tbx_ThiKT.Name = "tbx_ThiKT";
+            this.tbx_ThiKT.Size = new System.Drawing.Size(96, 30);
+            this.tbx_ThiKT.TabIndex = 25;
             // 
-            // textBox7
+            // tbx_KTGiuaKy
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(663, 133);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(96, 30);
-            this.textBox7.TabIndex = 24;
+            this.tbx_KTGiuaKy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_KTGiuaKy.Location = new System.Drawing.Point(663, 133);
+            this.tbx_KTGiuaKy.Name = "tbx_KTGiuaKy";
+            this.tbx_KTGiuaKy.Size = new System.Drawing.Size(96, 30);
+            this.tbx_KTGiuaKy.TabIndex = 24;
             // 
-            // textBox8
+            // tbx_DiemTL
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(420, 137);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(96, 30);
-            this.textBox8.TabIndex = 23;
+            this.tbx_DiemTL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_DiemTL.Location = new System.Drawing.Point(420, 137);
+            this.tbx_DiemTL.Name = "tbx_DiemTL";
+            this.tbx_DiemTL.Size = new System.Drawing.Size(96, 30);
+            this.tbx_DiemTL.TabIndex = 23;
             // 
             // label10
             // 
@@ -203,13 +320,13 @@
             this.label12.TabIndex = 19;
             this.label12.Text = "Điểm thảo luận";
             // 
-            // textBox9
+            // tbx_DiemTH
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(153, 137);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(96, 30);
-            this.textBox9.TabIndex = 18;
+            this.tbx_DiemTH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_DiemTH.Location = new System.Drawing.Point(153, 137);
+            this.tbx_DiemTH.Name = "tbx_DiemTH";
+            this.tbx_DiemTH.Size = new System.Drawing.Size(96, 30);
+            this.tbx_DiemTH.TabIndex = 18;
             // 
             // label13
             // 
@@ -562,123 +679,6 @@
             this.pbx_TimKiem.TabIndex = 36;
             this.pbx_TimKiem.TabStop = false;
             // 
-            // dtgrv_Stt
-            // 
-            this.dtgrv_Stt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_Stt.HeaderText = "STT";
-            this.dtgrv_Stt.MinimumWidth = 6;
-            this.dtgrv_Stt.Name = "dtgrv_Stt";
-            // 
-            // dtgrv_MaSV
-            // 
-            this.dtgrv_MaSV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_MaSV.DataPropertyName = "ma_sv";
-            this.dtgrv_MaSV.HeaderText = "Mã sinh viên";
-            this.dtgrv_MaSV.MinimumWidth = 6;
-            this.dtgrv_MaSV.Name = "dtgrv_MaSV";
-            // 
-            // dtgrv_MaHP
-            // 
-            this.dtgrv_MaHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_MaHP.DataPropertyName = "ma_mh";
-            this.dtgrv_MaHP.HeaderText = "Mã học phần";
-            this.dtgrv_MaHP.MinimumWidth = 6;
-            this.dtgrv_MaHP.Name = "dtgrv_MaHP";
-            // 
-            // dtgrv_TenHP
-            // 
-            this.dtgrv_TenHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TenHP.DataPropertyName = "ten_mh";
-            this.dtgrv_TenHP.HeaderText = "Tên học phần";
-            this.dtgrv_TenHP.MinimumWidth = 6;
-            this.dtgrv_TenHP.Name = "dtgrv_TenHP";
-            // 
-            // dtgrv_SoTinChi
-            // 
-            this.dtgrv_SoTinChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_SoTinChi.DataPropertyName = "so_tin_chi";
-            this.dtgrv_SoTinChi.HeaderText = "Số tín chỉ";
-            this.dtgrv_SoTinChi.MinimumWidth = 6;
-            this.dtgrv_SoTinChi.Name = "dtgrv_SoTinChi";
-            // 
-            // dtgrv_LanHoc
-            // 
-            this.dtgrv_LanHoc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_LanHoc.DataPropertyName = "lan_hoc";
-            this.dtgrv_LanHoc.HeaderText = "Lần học";
-            this.dtgrv_LanHoc.MinimumWidth = 6;
-            this.dtgrv_LanHoc.Name = "dtgrv_LanHoc";
-            // 
-            // dtgrv_LanThi
-            // 
-            this.dtgrv_LanThi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_LanThi.DataPropertyName = "lan_thi";
-            this.dtgrv_LanThi.HeaderText = "Lần thi";
-            this.dtgrv_LanThi.MinimumWidth = 6;
-            this.dtgrv_LanThi.Name = "dtgrv_LanThi";
-            // 
-            // dtgrv_DanhGia
-            // 
-            this.dtgrv_DanhGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_DanhGia.DataPropertyName = "danh_gia";
-            this.dtgrv_DanhGia.HeaderText = "Đánh giá";
-            this.dtgrv_DanhGia.MinimumWidth = 6;
-            this.dtgrv_DanhGia.Name = "dtgrv_DanhGia";
-            // 
-            // dtgrv_ChuyenCan
-            // 
-            this.dtgrv_ChuyenCan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_ChuyenCan.DataPropertyName = "chuyen_can";
-            this.dtgrv_ChuyenCan.HeaderText = "Chuyên cần";
-            this.dtgrv_ChuyenCan.MinimumWidth = 6;
-            this.dtgrv_ChuyenCan.Name = "dtgrv_ChuyenCan";
-            // 
-            // dtgrv_DiemTH
-            // 
-            this.dtgrv_DiemTH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_DiemTH.HeaderText = "Điểm TH";
-            this.dtgrv_DiemTH.MinimumWidth = 6;
-            this.dtgrv_DiemTH.Name = "dtgrv_DiemTH";
-            // 
-            // dtgrv_DiemTL
-            // 
-            this.dtgrv_DiemTL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_DiemTL.HeaderText = "Điểm TL";
-            this.dtgrv_DiemTL.MinimumWidth = 6;
-            this.dtgrv_DiemTL.Name = "dtgrv_DiemTL";
-            // 
-            // dtgrv_KTGiuaKy
-            // 
-            this.dtgrv_KTGiuaKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_KTGiuaKy.DataPropertyName = "kiem_tra_gk";
-            this.dtgrv_KTGiuaKy.HeaderText = "KT giữa kì";
-            this.dtgrv_KTGiuaKy.MinimumWidth = 6;
-            this.dtgrv_KTGiuaKy.Name = "dtgrv_KTGiuaKy";
-            // 
-            // dtgrv_ThiKetThuc
-            // 
-            this.dtgrv_ThiKetThuc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_ThiKetThuc.DataPropertyName = "thi_ket_thuc";
-            this.dtgrv_ThiKetThuc.HeaderText = "Thi kết thúc";
-            this.dtgrv_ThiKetThuc.MinimumWidth = 6;
-            this.dtgrv_ThiKetThuc.Name = "dtgrv_ThiKetThuc";
-            // 
-            // dtgrv_TongKetHP
-            // 
-            this.dtgrv_TongKetHP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TongKetHP.DataPropertyName = "tong_ket_hp";
-            this.dtgrv_TongKetHP.HeaderText = "Tổng kết HP";
-            this.dtgrv_TongKetHP.MinimumWidth = 6;
-            this.dtgrv_TongKetHP.Name = "dtgrv_TongKetHP";
-            // 
-            // dtgrv_DiemChu
-            // 
-            this.dtgrv_DiemChu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_DiemChu.DataPropertyName = "diem_chu";
-            this.dtgrv_DiemChu.HeaderText = "Điểm chữ";
-            this.dtgrv_DiemChu.MinimumWidth = 6;
-            this.dtgrv_DiemChu.Name = "dtgrv_DiemChu";
-            // 
             // FormDiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
@@ -722,13 +722,13 @@
         private System.Windows.Forms.PictureBox pbx_TimKiem;
         private System.Windows.Forms.ComboBox cbx_MaSV;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbx_ThiKT;
+        private System.Windows.Forms.TextBox tbx_KTGiuaKy;
+        private System.Windows.Forms.TextBox tbx_DiemTL;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbx_DiemTH;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox tbx_ChuyenCan;
         private System.Windows.Forms.TextBox tbx_DanhGia;
