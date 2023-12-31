@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormThemTaiKhoan));
             this.dtgrv_TaiKhoan = new System.Windows.Forms.DataGridView();
-            this.dtgrv_TK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtgrv_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pbx_TimKiem = new System.Windows.Forms.PictureBox();
             this.btn_NhapExcel = new System.Windows.Forms.Button();
@@ -56,6 +52,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbx_ChucVu = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtgrv_TK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtgrv_TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_TaiKhoan)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).BeginInit();
@@ -81,39 +81,7 @@
             this.dtgrv_TaiKhoan.RowTemplate.Height = 33;
             this.dtgrv_TaiKhoan.Size = new System.Drawing.Size(1132, 381);
             this.dtgrv_TaiKhoan.TabIndex = 2;
-            // 
-            // dtgrv_TK
-            // 
-            this.dtgrv_TK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TK.HeaderText = "Tài Khoản ";
-            this.dtgrv_TK.MinimumWidth = 10;
-            this.dtgrv_TK.Name = "dtgrv_TK";
-            // 
-            // dtgrv_MatKhau
-            // 
-            this.dtgrv_MatKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_MatKhau.DataPropertyName = "mat_khau";
-            this.dtgrv_MatKhau.HeaderText = "Mật Khẩu";
-            this.dtgrv_MatKhau.MinimumWidth = 10;
-            this.dtgrv_MatKhau.Name = "dtgrv_MatKhau";
-            // 
-            // dtgrv_ChucVu
-            // 
-            this.dtgrv_ChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_ChucVu.DataPropertyName = "idPer";
-            this.dtgrv_ChucVu.HeaderText = "Chức Vụ";
-            this.dtgrv_ChucVu.MinimumWidth = 10;
-            this.dtgrv_ChucVu.Name = "dtgrv_ChucVu";
-            this.dtgrv_ChucVu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // dtgrv_TrangThai
-            // 
-            this.dtgrv_TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtgrv_TrangThai.DataPropertyName = "status";
-            this.dtgrv_TrangThai.HeaderText = "Trạng Thái";
-            this.dtgrv_TrangThai.MinimumWidth = 10;
-            this.dtgrv_TrangThai.Name = "dtgrv_TrangThai";
-            this.dtgrv_TrangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgrv_TaiKhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrv_TaiKhoan_CellClick);
             // 
             // groupBox1
             // 
@@ -150,6 +118,7 @@
             this.pbx_TimKiem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbx_TimKiem.TabIndex = 36;
             this.pbx_TimKiem.TabStop = false;
+            this.pbx_TimKiem.Click += new System.EventHandler(this.pbx_TimKiem_Click);
             // 
             // btn_NhapExcel
             // 
@@ -162,7 +131,7 @@
             this.btn_NhapExcel.Location = new System.Drawing.Point(649, 21);
             this.btn_NhapExcel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_NhapExcel.Name = "btn_NhapExcel";
-            this.btn_NhapExcel.Size = new System.Drawing.Size(159, 33);
+            this.btn_NhapExcel.Size = new System.Drawing.Size(164, 48);
             this.btn_NhapExcel.TabIndex = 35;
             this.btn_NhapExcel.Text = "Nhập Excel";
             this.btn_NhapExcel.UseVisualStyleBackColor = false;
@@ -182,6 +151,7 @@
             this.btn_Xoa.TabIndex = 34;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_CapNhat
             // 
@@ -198,6 +168,7 @@
             this.btn_CapNhat.TabIndex = 33;
             this.btn_CapNhat.Text = "Cập nhật";
             this.btn_CapNhat.UseVisualStyleBackColor = false;
+            this.btn_CapNhat.Click += new System.EventHandler(this.btn_CapNhat_Click);
             // 
             // btn_Luu
             // 
@@ -230,6 +201,7 @@
             this.btn_Thêm.TabIndex = 31;
             this.btn_Thêm.Text = "Thêm";
             this.btn_Thêm.UseVisualStyleBackColor = false;
+            this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
             // 
             // btn_XuatExcel
             // 
@@ -242,7 +214,7 @@
             this.btn_XuatExcel.Location = new System.Drawing.Point(649, 62);
             this.btn_XuatExcel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_XuatExcel.Name = "btn_XuatExcel";
-            this.btn_XuatExcel.Size = new System.Drawing.Size(159, 36);
+            this.btn_XuatExcel.Size = new System.Drawing.Size(159, 48);
             this.btn_XuatExcel.TabIndex = 30;
             this.btn_XuatExcel.Text = "Xuất Excel";
             this.btn_XuatExcel.UseVisualStyleBackColor = false;
@@ -253,15 +225,10 @@
             this.cbx_ChonMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbx_ChonMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbx_ChonMonHoc.FormattingEnabled = true;
-            this.cbx_ChonMonHoc.Items.AddRange(new object[] {
-            "Toán ",
-            "Lý ",
-            "Hóa ",
-            "Lập trình C++"});
             this.cbx_ChonMonHoc.Location = new System.Drawing.Point(945, 65);
             this.cbx_ChonMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_ChonMonHoc.Name = "cbx_ChonMonHoc";
-            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(176, 45);
             this.cbx_ChonMonHoc.TabIndex = 28;
             this.cbx_ChonMonHoc.Text = "-Chọn trạng thái-";
             // 
@@ -270,7 +237,7 @@
             this.tbx_TimKiem.Location = new System.Drawing.Point(20, 65);
             this.tbx_TimKiem.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.tbx_TimKiem.Name = "tbx_TimKiem";
-            this.tbx_TimKiem.Size = new System.Drawing.Size(304, 30);
+            this.tbx_TimKiem.Size = new System.Drawing.Size(304, 44);
             this.tbx_TimKiem.TabIndex = 26;
             this.tbx_TimKiem.Text = "(Tìm kiếm tài khoản)";
             // 
@@ -281,7 +248,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(841, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 23);
+            this.label1.Size = new System.Drawing.Size(140, 38);
             this.label1.TabIndex = 27;
             this.label1.Text = "Trạng thái";
             // 
@@ -291,14 +258,10 @@
             this.cbx_ChonChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbx_ChonChucVu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cbx_ChonChucVu.FormattingEnabled = true;
-            this.cbx_ChonChucVu.Items.AddRange(new object[] {
-            "Học kì 1",
-            "Học kì 2",
-            "Học kì 3"});
             this.cbx_ChonChucVu.Location = new System.Drawing.Point(942, 27);
             this.cbx_ChonChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_ChonChucVu.Name = "cbx_ChonChucVu";
-            this.cbx_ChonChucVu.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonChucVu.Size = new System.Drawing.Size(176, 45);
             this.cbx_ChonChucVu.TabIndex = 24;
             this.cbx_ChonChucVu.Text = "-Chọn chức vụ-";
             // 
@@ -309,7 +272,7 @@
             this.ln_chonhocki.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ln_chonhocki.Location = new System.Drawing.Point(841, 30);
             this.ln_chonhocki.Name = "ln_chonhocki";
-            this.ln_chonhocki.Size = new System.Drawing.Size(72, 23);
+            this.ln_chonhocki.Size = new System.Drawing.Size(116, 38);
             this.ln_chonhocki.TabIndex = 25;
             this.ln_chonhocki.Text = "Chức vụ";
             // 
@@ -340,7 +303,7 @@
             this.tbx_MatKhau.Location = new System.Drawing.Point(354, 33);
             this.tbx_MatKhau.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_MatKhau.Name = "tbx_MatKhau";
-            this.tbx_MatKhau.Size = new System.Drawing.Size(108, 30);
+            this.tbx_MatKhau.Size = new System.Drawing.Size(108, 44);
             this.tbx_MatKhau.TabIndex = 13;
             // 
             // label5
@@ -348,7 +311,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(250, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 23);
+            this.label5.Size = new System.Drawing.Size(133, 38);
             this.label5.TabIndex = 6;
             this.label5.Text = "Mật khẩu";
             // 
@@ -358,7 +321,7 @@
             this.tbx_TaiKhoan.Location = new System.Drawing.Point(120, 33);
             this.tbx_TaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbx_TaiKhoan.Name = "tbx_TaiKhoan";
-            this.tbx_TaiKhoan.Size = new System.Drawing.Size(108, 30);
+            this.tbx_TaiKhoan.Size = new System.Drawing.Size(108, 44);
             this.tbx_TaiKhoan.TabIndex = 5;
             // 
             // label4
@@ -366,7 +329,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(16, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 23);
+            this.label4.Size = new System.Drawing.Size(134, 38);
             this.label4.TabIndex = 4;
             this.label4.Text = "Tài khoản";
             // 
@@ -376,7 +339,7 @@
             this.cbx_TrangThai.Location = new System.Drawing.Point(901, 33);
             this.cbx_TrangThai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_TrangThai.Name = "cbx_TrangThai";
-            this.cbx_TrangThai.Size = new System.Drawing.Size(222, 31);
+            this.cbx_TrangThai.Size = new System.Drawing.Size(222, 45);
             this.cbx_TrangThai.TabIndex = 3;
             this.cbx_TrangThai.Text = "-Chọn trạng thái -";
             // 
@@ -385,7 +348,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(808, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 23);
+            this.label3.Size = new System.Drawing.Size(140, 38);
             this.label3.TabIndex = 2;
             this.label3.Text = "Trạng thái";
             // 
@@ -395,22 +358,57 @@
             this.cbx_ChucVu.Location = new System.Drawing.Point(578, 33);
             this.cbx_ChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_ChucVu.Name = "cbx_ChucVu";
-            this.cbx_ChucVu.Size = new System.Drawing.Size(208, 31);
+            this.cbx_ChucVu.Size = new System.Drawing.Size(208, 45);
             this.cbx_ChucVu.TabIndex = 1;
             this.cbx_ChucVu.Text = "-Chọn chức vụ -";
+            this.cbx_ChucVu.SelectedIndexChanged += new System.EventHandler(this.cbx_ChucVu_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(484, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 23);
+            this.label2.Size = new System.Drawing.Size(116, 38);
             this.label2.TabIndex = 0;
             this.label2.Text = "Chức vụ";
             // 
+            // dtgrv_TK
+            // 
+            this.dtgrv_TK.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TK.DataPropertyName = "tai_khoan";
+            this.dtgrv_TK.HeaderText = "Tài Khoản ";
+            this.dtgrv_TK.MinimumWidth = 10;
+            this.dtgrv_TK.Name = "dtgrv_TK";
+            // 
+            // dtgrv_MatKhau
+            // 
+            this.dtgrv_MatKhau.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_MatKhau.DataPropertyName = "mat_khau";
+            this.dtgrv_MatKhau.HeaderText = "Mật Khẩu";
+            this.dtgrv_MatKhau.MinimumWidth = 10;
+            this.dtgrv_MatKhau.Name = "dtgrv_MatKhau";
+            // 
+            // dtgrv_ChucVu
+            // 
+            this.dtgrv_ChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_ChucVu.DataPropertyName = "idPer";
+            this.dtgrv_ChucVu.HeaderText = "Chức Vụ";
+            this.dtgrv_ChucVu.MinimumWidth = 10;
+            this.dtgrv_ChucVu.Name = "dtgrv_ChucVu";
+            this.dtgrv_ChucVu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // dtgrv_TrangThai
+            // 
+            this.dtgrv_TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dtgrv_TrangThai.DataPropertyName = "status";
+            this.dtgrv_TrangThai.HeaderText = "Trạng Thái";
+            this.dtgrv_TrangThai.MinimumWidth = 10;
+            this.dtgrv_TrangThai.Name = "dtgrv_TrangThai";
+            this.dtgrv_TrangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // FormThemTaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1145, 622);
@@ -422,6 +420,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormThemTaiKhoan";
             this.Text = "Phần mềm quản lý điểm sinh viên";
+            this.Load += new System.EventHandler(this.FormThemTaiKhoan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrv_TaiKhoan)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
