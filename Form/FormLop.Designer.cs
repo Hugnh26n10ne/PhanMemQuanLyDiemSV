@@ -169,6 +169,7 @@
             this.btn_Thêm.TabIndex = 31;
             this.btn_Thêm.Text = "Thêm";
             this.btn_Thêm.UseVisualStyleBackColor = false;
+            this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
             // 
             // btn_XuatExcel
             // 
@@ -261,6 +262,7 @@
             this.tbx_MaLopHoc.Name = "tbx_MaLopHoc";
             this.tbx_MaLopHoc.Size = new System.Drawing.Size(108, 30);
             this.tbx_MaLopHoc.TabIndex = 5;
+            this.tbx_MaLopHoc.TextChanged += new System.EventHandler(this.tbx_MaLopHoc_TextChanged);
             // 
             // label4
             // 
@@ -274,12 +276,17 @@
             // cbx_ChonNganhHoc
             // 
             this.cbx_ChonNganhHoc.FormattingEnabled = true;
+            this.cbx_ChonNganhHoc.Items.AddRange(new object[] {
+            "Công Nghệ Thông TIn",
+            "Hệ Thống",
+            "Logistic"});
             this.cbx_ChonNganhHoc.Location = new System.Drawing.Point(596, 33);
             this.cbx_ChonNganhHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_ChonNganhHoc.Name = "cbx_ChonNganhHoc";
             this.cbx_ChonNganhHoc.Size = new System.Drawing.Size(208, 31);
             this.cbx_ChonNganhHoc.TabIndex = 1;
             this.cbx_ChonNganhHoc.Text = "-Chọn ngành học -";
+            this.cbx_ChonNganhHoc.SelectedIndexChanged += new System.EventHandler(this.cbx_ChonNganhHoc_SelectedIndexChanged);
             // 
             // label2
             // 
