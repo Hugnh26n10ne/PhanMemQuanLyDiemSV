@@ -77,6 +77,7 @@
             this.groupBox1.Size = new System.Drawing.Size(835, 121);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pbx_TimKiem
             // 
@@ -362,6 +363,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormLop";
             this.Text = "Phần mềm quản lý điểm sinh viên";
+            this.Load += new System.EventHandler(this.FormLop_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_TimKiem)).EndInit();

@@ -56,11 +56,55 @@ namespace PhanMemQuanLyDiemSinhVien
             }
             sql = sql.TrimEnd(',');
             sql += $")  VALUES (N'{p_ma_lh}', N'{p_ma_nganh}', {p_ghi_chu}, N'{p_ten_lh}');";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            conn.Close();
+
+            GetDataClass();
+            
         }
+
 
         private void cbx_ChonNganhHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormLop_Load(object sender, EventArgs e)
+        {
+            GetDataClass();
+        }
+        private void GetDataClass()
+        {
+            string nameTable = "BangLopHoc";
+            string[] collums = { "MaLopHoc", "TenLopHoc", "MaNganh", "Ghichu" };
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conn"].ConnectionString);
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+
+            }
+            string sql = $"SELECT * FROM {nameTable}";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            cmd.Dispose();
+            conn.Close();
+
+
+            
+        }
     }
+
 }
