@@ -28,6 +28,7 @@ namespace PhanMemQuanLyDiemSinhVien
 
         private void btn_Thêm_Click(object sender, EventArgs e)
         {
+            int IndexNumberRow = dtgrv_BangLopHoc.Rows.Count;
             string p_ma_lh = tbx_MaLopHoc.Text.Trim();
             string p_ma_nganh = cbx_ChonNganhHoc.Text.Trim();
             string p_ten_lh = tbx_TenLopHoc.Text.Trim();
@@ -96,8 +97,7 @@ namespace PhanMemQuanLyDiemSinhVien
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
-            DataTable dt = new DataTable();
-            da.Fill(dt);
+
 
             cmd.Dispose();
             conn.Close();

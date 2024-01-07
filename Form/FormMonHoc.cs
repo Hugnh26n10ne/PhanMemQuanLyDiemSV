@@ -17,6 +17,9 @@ namespace PhanMemQuanLyDiemSinhVien
             InitializeComponent();
         }
 
-        
+        private void btn_Thêm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -306,6 +306,7 @@
             this.btn_Thêm.TabIndex = 31;
             this.btn_Thêm.Text = "Thêm";
             this.btn_Thêm.UseVisualStyleBackColor = false;
+            this.btn_Thêm.Click += new System.EventHandler(this.btn_Thêm_Click);
             // 
             // btn_XuatExcel
             // 
@@ -337,7 +338,7 @@
             this.cbx_ChonMonHoc.Location = new System.Drawing.Point(997, 72);
             this.cbx_ChonMonHoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_ChonMonHoc.Name = "cbx_ChonMonHoc";
-            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonMonHoc.Size = new System.Drawing.Size(176, 27);
             this.cbx_ChonMonHoc.TabIndex = 28;
             this.cbx_ChonMonHoc.Text = "-Chọn tên môn-";
             // 
@@ -346,7 +347,7 @@
             this.tbx_TimKiem.Location = new System.Drawing.Point(18, 72);
             this.tbx_TimKiem.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.tbx_TimKiem.Name = "tbx_TimKiem";
-            this.tbx_TimKiem.Size = new System.Drawing.Size(304, 30);
+            this.tbx_TimKiem.Size = new System.Drawing.Size(304, 26);
             this.tbx_TimKiem.TabIndex = 26;
             this.tbx_TimKiem.Text = "(Nhập mã môn)";
             // 
@@ -357,7 +358,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(873, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.Size = new System.Drawing.Size(62, 19);
             this.label1.TabIndex = 27;
             this.label1.Text = "Tên môn";
             // 
@@ -374,7 +375,7 @@
             this.cbx_ChonChucVu.Location = new System.Drawing.Point(997, 29);
             this.cbx_ChonChucVu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbx_ChonChucVu.Name = "cbx_ChonChucVu";
-            this.cbx_ChonChucVu.Size = new System.Drawing.Size(176, 31);
+            this.cbx_ChonChucVu.Size = new System.Drawing.Size(176, 27);
             this.cbx_ChonChucVu.TabIndex = 24;
             this.cbx_ChonChucVu.Text = "-Chọn tên giảng viên-";
             // 
@@ -385,7 +386,7 @@
             this.ln_chonhocki.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ln_chonhocki.Location = new System.Drawing.Point(873, 33);
             this.ln_chonhocki.Name = "ln_chonhocki";
-            this.ln_chonhocki.Size = new System.Drawing.Size(91, 23);
+            this.ln_chonhocki.Size = new System.Drawing.Size(74, 19);
             this.ln_chonhocki.TabIndex = 25;
             this.ln_chonhocki.Text = "Giảng viên";
             // 
@@ -434,7 +435,7 @@
             this.tbx_HocPhi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbx_HocPhi.Location = new System.Drawing.Point(899, 79);
             this.tbx_HocPhi.Name = "tbx_HocPhi";
-            this.tbx_HocPhi.Size = new System.Drawing.Size(117, 30);
+            this.tbx_HocPhi.Size = new System.Drawing.Size(117, 26);
             this.tbx_HocPhi.TabIndex = 24;
             // 
             // tbx_SoDK
@@ -442,7 +443,7 @@
             this.tbx_SoDK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbx_SoDK.Location = new System.Drawing.Point(663, 79);
             this.tbx_SoDK.Name = "tbx_SoDK";
-            this.tbx_SoDK.Size = new System.Drawing.Size(117, 30);
+            this.tbx_SoDK.Size = new System.Drawing.Size(117, 26);
             this.tbx_SoDK.TabIndex = 23;
             // 
             // label10
@@ -450,7 +451,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(753, 139);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 23);
+            this.label10.Size = new System.Drawing.Size(56, 19);
             this.label10.TabIndex = 21;
             this.label10.Text = "Ghi chú";
             // 
@@ -459,7 +460,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(811, 83);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 23);
+            this.label11.Size = new System.Drawing.Size(56, 19);
             this.label11.TabIndex = 20;
             this.label11.Text = "Học phí";
             // 
@@ -468,7 +469,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(557, 83);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 23);
+            this.label12.Size = new System.Drawing.Size(46, 19);
             this.label12.TabIndex = 19;
             this.label12.Text = "Số ĐK";
             // 
@@ -477,7 +478,7 @@
             this.tbx_SoTiet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbx_SoTiet.Location = new System.Drawing.Point(409, 79);
             this.tbx_SoTiet.Name = "tbx_SoTiet";
-            this.tbx_SoTiet.Size = new System.Drawing.Size(123, 30);
+            this.tbx_SoTiet.Size = new System.Drawing.Size(123, 26);
             this.tbx_SoTiet.TabIndex = 18;
             // 
             // label13
@@ -485,7 +486,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(280, 83);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 23);
+            this.label13.Size = new System.Drawing.Size(48, 19);
             this.label13.TabIndex = 17;
             this.label13.Text = "Số tiết";
             // 
@@ -494,7 +495,7 @@
             this.tbx_SoTinChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbx_SoTinChi.Location = new System.Drawing.Point(144, 79);
             this.tbx_SoTinChi.Name = "tbx_SoTinChi";
-            this.tbx_SoTinChi.Size = new System.Drawing.Size(115, 30);
+            this.tbx_SoTinChi.Size = new System.Drawing.Size(115, 26);
             this.tbx_SoTinChi.TabIndex = 16;
             // 
             // tbx_DiaDiem
@@ -520,7 +521,7 @@
             this.tbx_TenMH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbx_TenMH.Location = new System.Drawing.Point(409, 29);
             this.tbx_TenMH.Name = "tbx_TenMH";
-            this.tbx_TenMH.Size = new System.Drawing.Size(123, 30);
+            this.tbx_TenMH.Size = new System.Drawing.Size(123, 26);
             this.tbx_TenMH.TabIndex = 13;
             // 
             // label8
@@ -528,7 +529,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(17, 83);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 23);
+            this.label8.Size = new System.Drawing.Size(65, 19);
             this.label8.TabIndex = 12;
             this.label8.Text = "Số tín chỉ";
             // 
@@ -537,7 +538,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(379, 134);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 23);
+            this.label7.Size = new System.Drawing.Size(63, 19);
             this.label7.TabIndex = 10;
             this.label7.Text = "Địa điểm";
             // 
@@ -546,7 +547,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(17, 134);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 23);
+            this.label6.Size = new System.Drawing.Size(65, 19);
             this.label6.TabIndex = 8;
             this.label6.Text = "Thời gian";
             // 
@@ -555,7 +556,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(280, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 23);
+            this.label5.Size = new System.Drawing.Size(88, 19);
             this.label5.TabIndex = 6;
             this.label5.Text = "Tên môn học";
             // 
@@ -564,7 +565,7 @@
             this.tbx_MaMH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbx_MaMH.Location = new System.Drawing.Point(144, 29);
             this.tbx_MaMH.Name = "tbx_MaMH";
-            this.tbx_MaMH.Size = new System.Drawing.Size(116, 30);
+            this.tbx_MaMH.Size = new System.Drawing.Size(116, 26);
             this.tbx_MaMH.TabIndex = 5;
             // 
             // label4
@@ -572,7 +573,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(17, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 23);
+            this.label4.Size = new System.Drawing.Size(87, 19);
             this.label4.TabIndex = 4;
             this.label4.Text = "Mã môn học";
             // 
@@ -581,7 +582,7 @@
             this.cbx_ChonGV.FormattingEnabled = true;
             this.cbx_ChonGV.Location = new System.Drawing.Point(663, 29);
             this.cbx_ChonGV.Name = "cbx_ChonGV";
-            this.cbx_ChonGV.Size = new System.Drawing.Size(198, 31);
+            this.cbx_ChonGV.Size = new System.Drawing.Size(198, 27);
             this.cbx_ChonGV.TabIndex = 3;
             this.cbx_ChonGV.Text = "- Giảng Viên -";
             // 
@@ -590,13 +591,13 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(552, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 23);
+            this.label3.Size = new System.Drawing.Size(74, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Giảng viên";
             // 
             // FormMonHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1204, 993);
